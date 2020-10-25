@@ -1,18 +1,79 @@
-<h3>All Users</h3>
+
+<header>
+  <h3>All Users</h3>
+  <input type="text"
+         [(ngModel)]="searchValue"
+         name="search"
+         placeholder="Search"
+         (keyup)="filterUser()">
+</header>
 
 <table>
   <thead>
-  <tr>
-    <th>Id</th>
-    <th>Name</th>
-    <th>Website</th>
-  </tr>
+    <tr>
+      <th (click)="sortUsers('name')">
+        Name
+        <!-- Todo: this part could be inside a directive on the th to avoid repeating-->
+        <b *ngIf="sortKey === 'name' && sortDirectionToggle === false">⬆</b>
+        <b *ngIf="sortKey === 'name' && sortDirectionToggle === true">⬇</b>
+      </th>
+      <th (click)="sortUsers('username')">
+        Username
+        <b *ngIf="sortKey === 'username' && sortDirectionToggle === false">⬆</b>
+        <b *ngIf="sortKey === 'username' && sortDirectionToggle === true">⬇</b>
+      </th>
+      <th (click)="sortUsers('email')">
+        Email
+        <b *ngIf="sortKey === 'email' && sortDirectionToggle === false">⬆</b>
+        <b *ngIf="sortKey === 'email' && sortDirectionToggle === true">⬇</b>
+      </th>
+      <th (click)="sortUsers('address.city')">
+        Address
+        <b *ngIf="sortKey === 'address.city' && sortDirectionToggle === false">⬆</b>
+        <b *ngIf="sortKey === 'address.city' && sortDirectionToggle === true">⬇</b>
+      </th>
+      <th (click)="sortUsers('phone')">
+        Phone
+        <b *ngIf="sortKey === 'phone' && sortDirectionToggle === false">⬆</b>
+        <b *ngIf="sortKey === 'phone' && sortDirectionToggle === true">⬇</b>
+      </th>
+      <th (click)="sortUsers('website')">
+        Website
+        <b *ngIf="sortKey === 'website' && sortDirectionToggle === false">⬆</b>
+        <b *ngIf="sortKey === 'website' && sortDirectionToggle === true">⬇</b>
+      </th>
+      <th (click)="sortUsers('company.name')">
+        Company name
+        <b *ngIf="sortKey === 'company.name' && sortDirectionToggle === false">⬆</b>
+        <b *ngIf="sortKey === 'company.name' && sortDirectionToggle === true">⬇</b>
+      </th>
+      <th (click)="sortUsers('numberOfAlbum')">
+        Number of albums
+        <b *ngIf="sortKey === 'numberOfAlbum' && sortDirectionToggle === false">⬆</b>
+        <b *ngIf="sortKey === 'numberOfAlbum' && sortDirectionToggle === true">⬇</b>
+      </th>
+    </tr>
   </thead>
   <tbody>
   <tr *ngFor="let user of users">
-    <td>{{ user.id }}</td>
-    <td>{{user.name}}</td>
+    <!-- we make a separate event for each cell to avoid the default event when clicking on the cell with links -->
+    <td (click)="goToPosts(user)">{{user.name}}</td>
+    <td (click)="goToPosts(user)">{{user.username}}</td>
+    <td (click)="goToPosts(user)">{{user.email}}</td>
+    <td>
+      <a href="https://www.google.com/maps/search/?api=1&query={{user.address.geo.lat}},{{user.address.geo.lng}}">
+        {{user.address.city}}/{{user.address.street}}/{{user.address.suite}}
+      </a>
+    </td>
+    <td (click)="goToPosts(user)">{{user.phone}}</td>
     <td><a href="http://{{user.website}}" target="_blank">{{user.website}}</a></td>
+    <td class="company-tooltip" (click)="goToPosts(user)">
+      {{user.company.name}}
+      <div>
+        {{user.company.catchPhrase}}
+      </div>
+    </td>
+    <td (click)="goToPosts(user)">{{user.numberOfAlbum}}</td>
   </tr>
   </tbody>
 </table>

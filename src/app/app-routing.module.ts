@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'users-table',
     loadChildren: () => import('./modules/users-table/users-table.module').then(m => m.UsersTableModule)
+  },
+  {
+    path: 'posts',
+    loadChildren: () => import('./modules/user-posts/user-posts.module').then(m => m.UserPostsModule)
   }
 ];
 
