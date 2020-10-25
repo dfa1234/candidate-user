@@ -1,0 +1,86 @@
+header {
+
+  display: flex;
+  flex-direction: row;
+
+  h3 {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+  input {
+    border-radius: 5px;
+    background-color: white;
+    margin-left: auto;
+    border: 2px solid lightgray;
+    height: 30px;
+
+    &:focus {
+      background-color: whitesmoke;
+      border: 2px solid #7b26c9;
+      color: #333333;
+    }
+  }
+
+}
+
+
+table {
+  border-collapse: collapse;
+  font-family: sans-serif;
+  box-sizing: border-box;
+
+  thead > tr > th {
+    border-bottom: 2px solid blueviolet;
+    color: #666666;
+    font-size: 14px;
+    box-shadow: 0 0 0 1px #fff;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  tbody > tr > td {
+    color: #333333;
+    font-size: 14px;
+    border-bottom: 1px solid #DFDFDF;
+    cursor: pointer;
+  }
+
+  tr:hover {
+    background-color: rgb(241, 239, 250);
+  }
+
+  th, td {
+    padding: 10px;
+    height: 35px;
+  }
+
+  a {
+    color: rgb(162, 147, 215);
+  }
+}
+
+
+.company-tooltip {
+  position: relative;
+
+  &:hover {
+    & > div {
+      display: block;
+    }
+  }
+
+  & > div {
+    position: absolute;
+    top: -5;
+    right: -50px;
+    background: whitesmoke;
+    width: 200px;
+    height: 50px;
+    border: 1px solid lightgray;
+    display: none;
+    padding: 20px;
+    z-index: 2;
+  }
+}
+
