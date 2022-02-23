@@ -1,10 +1,22 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {UsersStore} from "./stores/users.store";
+import {AlbumStore} from "./stores/album.store";
+import {UserService} from "./sevices/user.service";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    template: `
+        <app-user-table></app-user-table>
+        <app-photo></app-photo>
+    `,
+    styles: [],
+    providers: [UsersStore, AlbumStore, UserService]
 })
-export class AppComponent {
-  title = 'candidate-user';
+export class AppComponent implements OnInit {
+
+    constructor() {
+    }
+
+    ngOnInit(): void {
+    }
 }
