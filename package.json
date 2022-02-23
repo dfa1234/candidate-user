@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "ci:build": "ng build --base-href=/$npm_package_name/",
     "test": "ng test",
     "ci:test": "ng test --browsers=ChromeHeadless --watch=false --code-coverage",
     "lint": "ng lint",
