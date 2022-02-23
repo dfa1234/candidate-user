@@ -1218,6 +1218,6155 @@ function dispatchError(arg) {
 
 /***/ }),
 
+/***/ "4ZtF":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@datorama/akita/__ivy_ngcc__/fesm2015/datorama-akita.js ***!
+  \******************************************************************************/
+/*! exports provided: EntityStore, EntityUIStore, QueryEntity, EntityUIQuery, Query, Store, applyTransaction, transaction, commit, endBatch, isTransactionInProcess, startBatch, transactionManager, withTransaction, filterNil, DEFAULT_ID_KEY, action, setAction, setSkipAction, logAction, currentAction, resetCustomAction, SnapshotManager, snapshotManager, configKey, StoreConfig, QueryConfig, queryConfigKey, akitaConfig, getAkitaConfig, compareValues, Order, AkitaPlugin, Paginator, PaginatorPlugin, PersistNgFormPlugin, persistState, selectPersistStateInit, akitaDevtools, EntityCollectionPlugin, StateHistoryPlugin, EntityStateHistoryPlugin, dirtyCheckDefaultParams, DirtyCheckPlugin, getNestedPath, EntityDirtyCheckPlugin, guid, setEntities, isEntityState, toEntitiesIds, toEntitiesObject, hasEntity, hasActiveState, getExitingActives, isMultiActiveState, resolveActiveEntity, isEmpty, coerceArray, updateEntities, removeEntities, removeAllEntities, getInitialEntitiesState, getActiveEntities, addEntities, resetStores, isObject, isPlainObject, isFunction, isArray, toBoolean, isUndefined, isNil, isString, isNumber, isDefined, setValue, getValue, sortByOptions, entitiesToArray, entitiesToMap, __stores__, isDev, enableAkitaProdMode, __DEV__, isNotBrowser, runStoreAction, StoreActions, arrayUpdate, arrayAdd, arrayUpsert, arrayFind, distinctUntilArrayItemChanged, find, arrayRemove, createEntityQuery, createEntityStore, createQuery, createStore, cacheable, combineQueries, EntityService, setLoading, EntityActions, dispatchDeleted, dispatchAdded, dispatchUpdate, $$deleteStore, $$addStore, $$updateStore, ɵa */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EntityStore", function() { return EntityStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EntityUIStore", function() { return EntityUIStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QueryEntity", function() { return QueryEntity; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EntityUIQuery", function() { return EntityUIQuery; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Query", function() { return Query; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Store", function() { return Store; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "applyTransaction", function() { return applyTransaction; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "transaction", function() { return transaction; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "commit", function() { return commit; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "endBatch", function() { return endBatch; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isTransactionInProcess", function() { return isTransactionInProcess; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "startBatch", function() { return startBatch; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "transactionManager", function() { return transactionManager; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withTransaction", function() { return withTransaction; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "filterNil", function() { return filterNil; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DEFAULT_ID_KEY", function() { return DEFAULT_ID_KEY; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "action", function() { return action; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setAction", function() { return setAction; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setSkipAction", function() { return setSkipAction; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logAction", function() { return logAction; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "currentAction", function() { return currentAction; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "resetCustomAction", function() { return resetCustomAction; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SnapshotManager", function() { return SnapshotManager; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "snapshotManager", function() { return snapshotManager; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "configKey", function() { return configKey; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StoreConfig", function() { return StoreConfig; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QueryConfig", function() { return QueryConfig; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "queryConfigKey", function() { return queryConfigKey; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "akitaConfig", function() { return akitaConfig; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getAkitaConfig", function() { return getAkitaConfig; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "compareValues", function() { return compareValues; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Order", function() { return Order; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AkitaPlugin", function() { return AkitaPlugin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Paginator", function() { return Paginator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PaginatorPlugin", function() { return PaginatorPlugin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PersistNgFormPlugin", function() { return PersistNgFormPlugin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "persistState", function() { return persistState; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "selectPersistStateInit", function() { return selectPersistStateInit; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "akitaDevtools", function() { return akitaDevtools; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EntityCollectionPlugin", function() { return EntityCollectionPlugin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StateHistoryPlugin", function() { return StateHistoryPlugin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EntityStateHistoryPlugin", function() { return EntityStateHistoryPlugin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dirtyCheckDefaultParams", function() { return dirtyCheckDefaultParams; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DirtyCheckPlugin", function() { return DirtyCheckPlugin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getNestedPath", function() { return getNestedPath; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EntityDirtyCheckPlugin", function() { return EntityDirtyCheckPlugin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guid", function() { return guid; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setEntities", function() { return setEntities; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isEntityState", function() { return isEntityState; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toEntitiesIds", function() { return toEntitiesIds; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toEntitiesObject", function() { return toEntitiesObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hasEntity", function() { return hasEntity; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hasActiveState", function() { return hasActiveState; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getExitingActives", function() { return getExitingActives; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isMultiActiveState", function() { return isMultiActiveState; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "resolveActiveEntity", function() { return resolveActiveEntity; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isEmpty", function() { return isEmpty; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "coerceArray", function() { return coerceArray; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateEntities", function() { return updateEntities; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "removeEntities", function() { return removeEntities; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "removeAllEntities", function() { return removeAllEntities; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getInitialEntitiesState", function() { return getInitialEntitiesState; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getActiveEntities", function() { return getActiveEntities; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addEntities", function() { return addEntities; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "resetStores", function() { return resetStores; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isObject", function() { return isObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isPlainObject", function() { return isPlainObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isFunction", function() { return isFunction; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isArray", function() { return isArray; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toBoolean", function() { return toBoolean; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isUndefined", function() { return isUndefined; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isNil", function() { return isNil; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isString", function() { return isString; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isNumber", function() { return isNumber; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isDefined", function() { return isDefined; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setValue", function() { return setValue; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getValue", function() { return getValue; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sortByOptions", function() { return sortByOptions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "entitiesToArray", function() { return entitiesToArray; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "entitiesToMap", function() { return entitiesToMap; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__stores__", function() { return __stores__; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isDev", function() { return isDev; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "enableAkitaProdMode", function() { return enableAkitaProdMode; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__DEV__", function() { return __DEV__; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isNotBrowser", function() { return isNotBrowser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "runStoreAction", function() { return runStoreAction; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StoreActions", function() { return StoreActions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "arrayUpdate", function() { return arrayUpdate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "arrayAdd", function() { return arrayAdd; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "arrayUpsert", function() { return arrayUpsert; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "arrayFind", function() { return arrayFind; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "distinctUntilArrayItemChanged", function() { return distinctUntilArrayItemChanged; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "find", function() { return find; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "arrayRemove", function() { return arrayRemove; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createEntityQuery", function() { return createEntityQuery; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createEntityStore", function() { return createEntityStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createQuery", function() { return createQuery; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createStore", function() { return createStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cacheable", function() { return cacheable; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "combineQueries", function() { return combineQueries; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EntityService", function() { return EntityService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setLoading", function() { return setLoading; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EntityActions", function() { return EntityActions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dispatchDeleted", function() { return dispatchDeleted; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dispatchAdded", function() { return dispatchAdded; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dispatchUpdate", function() { return dispatchUpdate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$$deleteStore", function() { return $$deleteStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$$addStore", function() { return $$addStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "$$updateStore", function() { return $$updateStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵa", function() { return isBrowser; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "hkni");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+
+
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @template T
+ * @param {?} value
+ * @return {?}
+ */
+
+function isArray(value) {
+    return Array.isArray(value);
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @template T
+ * @param {?} arr
+ * @return {?}
+ */
+function isEmpty(arr) {
+    if (isArray(arr)) {
+        return arr.length === 0;
+    }
+    return false;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @template E
+ * @param {?} entities
+ * @param {?} idKey
+ * @param {?} preAddEntity
+ * @return {?}
+ */
+function toEntitiesObject(entities, idKey, preAddEntity) {
+    /** @type {?} */
+    const acc = {
+        entities: {},
+        ids: []
+    };
+    for (const entity of entities) {
+        // evaluate the middleware first to support dynamic ids
+        /** @type {?} */
+        const current = preAddEntity(entity);
+        acc.entities[current[idKey]] = current;
+        acc.ids.push(current[idKey]);
+    }
+    return acc;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @template E
+ * @param {?} entities
+ * @param {?} id
+ * @return {?}
+ */
+function hasEntity(entities, id) {
+    return entities.hasOwnProperty(id);
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @template E
+ * @param {?} state
+ * @return {?}
+ */
+function hasActiveState(state) {
+    return state.hasOwnProperty('active');
+}
+// @internal
+/**
+ * @param {?} active
+ * @return {?}
+ */
+function isMultiActiveState(active) {
+    return isArray(active);
+}
+// @internal
+/**
+ * @template E
+ * @param {?} __0
+ * @return {?}
+ */
+function resolveActiveEntity({ active, ids, entities }) {
+    if (isMultiActiveState(active)) {
+        return getExitingActives(active, ids);
+    }
+    if (hasEntity(entities, active) === false) {
+        return null;
+    }
+    return active;
+}
+// @internal
+/**
+ * @param {?} currentActivesIds
+ * @param {?} newIds
+ * @return {?}
+ */
+function getExitingActives(currentActivesIds, newIds) {
+    /** @type {?} */
+    const filtered = currentActivesIds.filter((/**
+     * @param {?} id
+     * @return {?}
+     */
+    id => newIds.indexOf(id) > -1));
+    /** Return the same reference if nothing has changed */
+    if (filtered.length === currentActivesIds.length) {
+        return currentActivesIds;
+    }
+    return filtered;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @template Entity
+ * @param {?} state
+ * @return {?}
+ */
+function isEntityState(state) {
+    return state.entities && state.ids;
+}
+// @internal
+/**
+ * @template E
+ * @param {?} entities
+ * @param {?} preAddEntity
+ * @return {?}
+ */
+function applyMiddleware(entities, preAddEntity) {
+    /** @type {?} */
+    let mapped = {};
+    for (const id of Object.keys(entities)) {
+        mapped[id] = preAddEntity(entities[id]);
+    }
+    return mapped;
+}
+// @internal
+/**
+ * @template S, E
+ * @param {?} __0
+ * @return {?}
+ */
+function setEntities({ state, entities, idKey, preAddEntity, isNativePreAdd }) {
+    /** @type {?} */
+    let newEntities;
+    /** @type {?} */
+    let newIds;
+    if (isArray(entities)) {
+        /** @type {?} */
+        const resolve = toEntitiesObject(entities, idKey, preAddEntity);
+        newEntities = resolve.entities;
+        newIds = resolve.ids;
+    }
+    else if (isEntityState(entities)) {
+        newEntities = isNativePreAdd ? entities.entities : applyMiddleware(entities.entities, preAddEntity);
+        newIds = entities.ids;
+    }
+    else {
+        // it's an object
+        newEntities = isNativePreAdd ? entities : applyMiddleware(entities, preAddEntity);
+        newIds = Object.keys(newEntities).map((/**
+         * @param {?} id
+         * @return {?}
+         */
+        id => (isNaN((/** @type {?} */ (id))) ? id : Number(id))));
+    }
+    /** @type {?} */
+    const newState = Object.assign({}, state, { entities: newEntities, ids: newIds, loading: false });
+    if (hasActiveState(state)) {
+        newState.active = resolveActiveEntity((/** @type {?} */ (newState)));
+    }
+    return newState;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+const currentAction = {
+    type: null,
+    entityIds: null,
+    skip: false
+};
+/** @type {?} */
+let customActionActive = false;
+/**
+ * @return {?}
+ */
+function resetCustomAction() {
+    customActionActive = false;
+}
+// public API for custom actions. Custom action always wins
+/**
+ * @param {?} type
+ * @param {?=} entityIds
+ * @return {?}
+ */
+function logAction(type, entityIds) {
+    setAction(type, entityIds);
+    customActionActive = true;
+}
+/**
+ * @param {?} type
+ * @param {?=} entityIds
+ * @return {?}
+ */
+function setAction(type, entityIds) {
+    if (customActionActive === false) {
+        currentAction.type = type;
+        currentAction.entityIds = entityIds;
+    }
+}
+/**
+ * @param {?=} skip
+ * @return {?}
+ */
+function setSkipAction(skip$$1 = true) {
+    currentAction.skip = skip$$1;
+}
+/**
+ * @param {?} action
+ * @param {?=} entityIds
+ * @return {?}
+ */
+function action(action, entityIds) {
+    return (/**
+     * @param {?} target
+     * @param {?} propertyKey
+     * @param {?} descriptor
+     * @return {?}
+     */
+    function (target, propertyKey, descriptor) {
+        /** @type {?} */
+        const originalMethod = descriptor.value;
+        descriptor.value = (/**
+         * @param {...?} args
+         * @return {?}
+         */
+        function (...args) {
+            logAction(action, entityIds);
+            return originalMethod.apply(this, args);
+        });
+        return descriptor;
+    });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+let CONFIG = {
+    resettable: false,
+    ttl: null,
+    producerFn: undefined
+};
+/**
+ * @param {?} config
+ * @return {?}
+ */
+function akitaConfig(config) {
+    CONFIG = Object.assign({}, CONFIG, config);
+}
+// @internal
+/**
+ * @return {?}
+ */
+function getAkitaConfig() {
+    return CONFIG;
+}
+/**
+ * @return {?}
+ */
+function getGlobalProducerFn() {
+    return CONFIG.producerFn;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @param {?} o
+ * @return {?}
+ */
+function deepFreeze(o) {
+    Object.freeze(o);
+    /** @type {?} */
+    const oIsFunction = typeof o === 'function';
+    /** @type {?} */
+    const hasOwnProp = Object.prototype.hasOwnProperty;
+    Object.getOwnPropertyNames(o).forEach((/**
+     * @param {?} prop
+     * @return {?}
+     */
+    function (prop) {
+        if (hasOwnProp.call(o, prop) &&
+            (oIsFunction ? prop !== 'caller' && prop !== 'callee' && prop !== 'arguments' : true) &&
+            o[prop] !== null &&
+            (typeof o[prop] === 'object' || typeof o[prop] === 'function') &&
+            !Object.isFrozen(o[prop])) {
+            deepFreeze(o[prop]);
+        }
+    }));
+    return o;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/** @type {?} */
+const $$deleteStore = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+// @internal
+/** @type {?} */
+const $$addStore = new rxjs__WEBPACK_IMPORTED_MODULE_1__["ReplaySubject"](50, 5000);
+// @internal
+/** @type {?} */
+const $$updateStore = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+// @internal
+/**
+ * @param {?} storeName
+ * @return {?}
+ */
+function dispatchDeleted(storeName) {
+    $$deleteStore.next(storeName);
+}
+// @internal
+/**
+ * @param {?} storeName
+ * @return {?}
+ */
+function dispatchAdded(storeName) {
+    $$addStore.next(storeName);
+}
+// @internal
+/**
+ * @param {?} storeName
+ * @return {?}
+ */
+function dispatchUpdate(storeName) {
+    $$updateStore.next(storeName);
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+let __DEV__ = true;
+/**
+ * @return {?}
+ */
+function enableAkitaProdMode() {
+    __DEV__ = false;
+}
+// @internal
+/**
+ * @return {?}
+ */
+function isDev() {
+    return __DEV__;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+class AkitaError extends Error {
+    /**
+     * @param {?} message
+     */
+    constructor(message) {
+        super(message);
+    }
+}
+// @internal
+/**
+ * @param {?} name
+ * @param {?} className
+ * @return {?}
+ */
+function assertStoreHasName(name, className) {
+    if (!name) {
+        console.error(`@StoreConfig({ name }) is missing in ${className}`);
+    }
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @param {?} v
+ * @return {?}
+ */
+function isNil(v) {
+    return v === null || v === undefined;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @param {?} val
+ * @return {?}
+ */
+function isDefined(val) {
+    return isNil(val) === false;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @param {?} value
+ * @return {?}
+ */
+function isFunction(value) {
+    return typeof value === 'function';
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @param {?} value
+ * @return {?}
+ */
+function toBoolean(value) {
+    return value != null && `${value}` !== 'false';
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @param {?} value
+ * @return {?}
+ */
+function isPlainObject(value) {
+    return toBoolean(value) && value.constructor.name === 'Object';
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+const isBrowser = typeof window !== 'undefined';
+/** @type {?} */
+const isNotBrowser = !isBrowser;
+/** @type {?} */
+const isNativeScript = typeof global !== 'undefined' && ((/** @type {?} */ (global))).__runtimeVersion !== 'undefined';
+/** @type {?} */
+const hasLocalStorage = (/**
+ * @return {?}
+ */
+() => {
+    try {
+        return typeof localStorage !== 'undefined';
+    }
+    catch (_a) {
+        return false;
+    }
+});
+/** @type {?} */
+const hasSessionStorage = (/**
+ * @return {?}
+ */
+() => {
+    try {
+        return typeof sessionStorage !== 'undefined';
+    }
+    catch (_a) {
+        return false;
+    }
+});
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+const configKey = 'akitaConfig';
+/**
+ * @param {?} metadata
+ * @return {?}
+ */
+function StoreConfig(metadata) {
+    return (/**
+     * @param {?} constructor
+     * @return {?}
+     */
+    function (constructor) {
+        constructor[configKey] = { idKey: 'id' };
+        for (let i = 0, keys = Object.keys(metadata); i < keys.length; i++) {
+            /** @type {?} */
+            const key = keys[i];
+            /* name is preserved read only key */
+            if (key === 'name') {
+                constructor[configKey]['storeName'] = metadata[key];
+            }
+            else {
+                constructor[configKey][key] = metadata[key];
+            }
+        }
+    });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/** @type {?} */
+const __stores__ = {};
+// @internal
+/** @type {?} */
+const __queries__ = {};
+if (isBrowser && isDev()) {
+    ((/** @type {?} */ (window))).$$stores = __stores__;
+    ((/** @type {?} */ (window))).$$queries = __queries__;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/** @type {?} */
+const transactionFinished = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+// @internal
+/** @type {?} */
+const transactionInProcess = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](false);
+// @internal
+/** @type {?} */
+const transactionManager = {
+    activeTransactions: 0,
+    batchTransaction: null
+};
+// @internal
+/**
+ * @return {?}
+ */
+function startBatch() {
+    if (!isTransactionInProcess()) {
+        transactionManager.batchTransaction = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+    }
+    transactionManager.activeTransactions++;
+    transactionInProcess.next(true);
+}
+// @internal
+/**
+ * @return {?}
+ */
+function endBatch() {
+    if (--transactionManager.activeTransactions === 0) {
+        transactionManager.batchTransaction.next(true);
+        transactionManager.batchTransaction.complete();
+        transactionInProcess.next(false);
+        transactionFinished.next(true);
+    }
+}
+// @internal
+/**
+ * @return {?}
+ */
+function isTransactionInProcess() {
+    return transactionManager.activeTransactions > 0;
+}
+// @internal
+/**
+ * @return {?}
+ */
+function commit() {
+    return transactionManager.batchTransaction ? transactionManager.batchTransaction.asObservable() : Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(true);
+}
+/**
+ *  A logical transaction.
+ *  Use this transaction to optimize the dispatch of all the stores.
+ *  The following code will update the store, BUT  emits only once
+ *
+ * \@example
+ *  applyTransaction(() => {
+ *    this.todosStore.add(new Todo(1, title));
+ *    this.todosStore.add(new Todo(2, title));
+ *  });
+ *
+ * @template T
+ * @param {?} action
+ * @param {?=} thisArg
+ * @return {?}
+ */
+function applyTransaction(action$$1, thisArg = undefined) {
+    startBatch();
+    try {
+        return action$$1.apply(thisArg);
+    }
+    finally {
+        logAction('@Transaction');
+        endBatch();
+    }
+}
+/**
+ *  A logical transaction.
+ *  Use this transaction to optimize the dispatch of all the stores.
+ *
+ *  The following code will update the store, BUT  emits only once.
+ *
+ * \@example
+ * \@transaction
+ *  addTodos() {
+ *    this.todosStore.add(new Todo(1, title));
+ *    this.todosStore.add(new Todo(2, title));
+ *  }
+ *
+ *
+ * @return {?}
+ */
+function transaction() {
+    return (/**
+     * @param {?} target
+     * @param {?} propertyKey
+     * @param {?} descriptor
+     * @return {?}
+     */
+    function (target, propertyKey, descriptor) {
+        /** @type {?} */
+        const originalMethod = descriptor.value;
+        descriptor.value = (/**
+         * @param {...?} args
+         * @return {?}
+         */
+        function (...args) {
+            return applyTransaction((/**
+             * @return {?}
+             */
+            () => {
+                return originalMethod.apply(this, args);
+            }), this);
+        });
+        return descriptor;
+    });
+}
+/**
+ *
+ * RxJS custom operator that wraps the callback inside transaction
+ *
+ * \@example
+ *
+ * return http.get().pipe(
+ *    withTransaction(response > {
+ *      store.setActive(1);
+ *      store.update();
+ *      store.updateEntity(1, {});
+ *    })
+ * )
+ *
+ * @template T
+ * @param {?} next
+ * @return {?}
+ */
+function withTransaction(next) {
+    return (/**
+     * @param {?} source
+     * @return {?}
+     */
+    function (source) {
+        return source.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["tap"])((/**
+         * @param {?} value
+         * @return {?}
+         */
+        value => applyTransaction((/**
+         * @return {?}
+         */
+        () => next(value))))));
+    });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ *
+ * Store for managing any type of data
+ *
+ * \@example
+ *
+ * export interface SessionState {
+ *   token: string;
+ *   userDetails: UserDetails
+ * }
+ *
+ * export function createInitialState(): SessionState {
+ *  return {
+ *    token: '',
+ *    userDetails: null
+ *  };
+ * }
+ *
+ * \@StoreConfig({ name: 'session' })
+ * export class SessionStore extends Store<SessionState> {
+ *   constructor() {
+ *    super(createInitialState());
+ *   }
+ * }
+ * @template S
+ */
+class Store {
+    /**
+     * @param {?} initialState
+     * @param {?=} options
+     */
+    constructor(initialState, options = {}) {
+        this.options = options;
+        this.inTransaction = false;
+        this.cache = {
+            active: new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](false),
+            ttl: null
+        };
+        this.onInit((/** @type {?} */ (initialState)));
+    }
+    /**
+     *  Set the loading state
+     *
+     * \@example
+     *
+     *  store.setLoading(true)
+     *
+     * @param {?=} loading
+     * @return {?}
+     */
+    setLoading(loading = false) {
+        if (loading !== ((/** @type {?} */ (this._value()))).loading) {
+            isDev() && setAction('Set Loading');
+            this._setState((/**
+             * @param {?} state
+             * @return {?}
+             */
+            state => ((/** @type {?} */ (Object.assign({}, state, { loading }))))));
+        }
+    }
+    /**
+     *
+     * Set whether the data is cached
+     *
+     * \@example
+     *
+     * store.setHasCache(true)
+     * store.setHasCache(false)
+     * store.setHasCache(true, { restartTTL: true })
+     *
+     * @param {?} hasCache
+     * @param {?=} options
+     * @return {?}
+     */
+    setHasCache(hasCache, options = { restartTTL: false }) {
+        if (hasCache !== this.cache.active.value) {
+            this.cache.active.next(hasCache);
+        }
+        if (options.restartTTL) {
+            /** @type {?} */
+            const ttlConfig = this.getCacheTTL();
+            if (ttlConfig) {
+                if (this.cache.ttl !== null) {
+                    clearTimeout(this.cache.ttl);
+                }
+                this.cache.ttl = (/** @type {?} */ (setTimeout((/**
+                 * @return {?}
+                 */
+                () => this.setHasCache(false)), ttlConfig)));
+            }
+        }
+    }
+    /**
+     *
+     * Sometimes we need to access the store value from a store
+     *
+     * \@example middleware
+     *
+     * @return {?}
+     */
+    getValue() {
+        return this.storeValue;
+    }
+    /**
+     *  Set the error state
+     *
+     * \@example
+     *
+     *  store.setError({text: 'unable to load data' })
+     *
+     * @template T
+     * @param {?} error
+     * @return {?}
+     */
+    setError(error) {
+        if (error !== ((/** @type {?} */ (this._value()))).error) {
+            isDev() && setAction('Set Error');
+            this._setState((/**
+             * @param {?} state
+             * @return {?}
+             */
+            state => ((/** @type {?} */ (Object.assign({}, state, { error }))))));
+        }
+    }
+    // @internal
+    /**
+     * @template R
+     * @param {?} project
+     * @return {?}
+     */
+    _select(project) {
+        return this.store.asObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(project), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["distinctUntilChanged"])());
+    }
+    // @internal
+    /**
+     * @return {?}
+     */
+    _value() {
+        return this.storeValue;
+    }
+    // @internal
+    /**
+     * @return {?}
+     */
+    _cache() {
+        return this.cache.active;
+    }
+    // @internal
+    /**
+     * @return {?}
+     */
+    get config() {
+        return this.constructor[configKey] || {};
+    }
+    // @internal
+    /**
+     * @return {?}
+     */
+    get storeName() {
+        return ((/** @type {?} */ (this.config))).storeName || ((/** @type {?} */ (this.options))).storeName || this.options.name;
+    }
+    // @internal
+    /**
+     * @return {?}
+     */
+    get deepFreeze() {
+        return this.config.deepFreezeFn || this.options.deepFreezeFn || deepFreeze;
+    }
+    // @internal
+    /**
+     * @return {?}
+     */
+    get cacheConfig() {
+        return this.config.cache || this.options.cache;
+    }
+    /**
+     * @return {?}
+     */
+    get _producerFn() {
+        return this.config.producerFn || this.options.producerFn || getGlobalProducerFn();
+    }
+    // @internal
+    /**
+     * @return {?}
+     */
+    get resettable() {
+        return isDefined(this.config.resettable) ? this.config.resettable : this.options.resettable;
+    }
+    // @internal
+    /**
+     * @param {?} newState
+     * @param {?=} _dispatchAction
+     * @return {?}
+     */
+    _setState(newState, _dispatchAction = true) {
+        if (isFunction(newState)) {
+            /** @type {?} */
+            const _newState = newState(this._value());
+            this.storeValue = __DEV__ ? this.deepFreeze(_newState) : _newState;
+        }
+        else {
+            this.storeValue = newState;
+        }
+        if (!this.store) {
+            this.store = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](this.storeValue);
+            return;
+        }
+        if (isTransactionInProcess()) {
+            this.handleTransaction();
+            return;
+        }
+        this.dispatch(this.storeValue, _dispatchAction);
+    }
+    /**
+     *
+     * Reset the current store back to the initial value
+     *
+     * \@example
+     *
+     * store.reset()
+     *
+     * @return {?}
+     */
+    reset() {
+        if (this.isResettable()) {
+            isDev() && setAction('Reset');
+            this._setState((/**
+             * @return {?}
+             */
+            () => Object.assign({}, this._initialState)));
+            this.setHasCache(false);
+        }
+        else {
+            isDev() && console.warn(`You need to enable the reset functionality`);
+        }
+    }
+    /**
+     * @param {?} stateOrCallback
+     * @return {?}
+     */
+    update(stateOrCallback) {
+        isDev() && setAction('Update');
+        /** @type {?} */
+        let newState;
+        /** @type {?} */
+        const currentState = this._value();
+        if (isFunction(stateOrCallback)) {
+            newState = isFunction(this._producerFn) ? this._producerFn(currentState, stateOrCallback) : stateOrCallback(currentState);
+        }
+        else {
+            newState = stateOrCallback;
+        }
+        /** @type {?} */
+        const withHook = this.akitaPreUpdate(currentState, (/** @type {?} */ (Object.assign({}, currentState, newState))));
+        /** @type {?} */
+        const resolved = isPlainObject(currentState) ? withHook : new ((/** @type {?} */ (currentState))).constructor(withHook);
+        this._setState(resolved);
+    }
+    /**
+     * @param {?} newOptions
+     * @return {?}
+     */
+    updateStoreConfig(newOptions) {
+        this.options = Object.assign({}, this.options, newOptions);
+    }
+    // @internal
+    /**
+     * @param {?} _
+     * @param {?} nextState
+     * @return {?}
+     */
+    akitaPreUpdate(_, nextState) {
+        return nextState;
+    }
+    /**
+     * @return {?}
+     */
+    ngOnDestroy() {
+        this.destroy();
+    }
+    /**
+     *
+     * Destroy the store
+     *
+     * \@example
+     *
+     * store.destroy()
+     *
+     * @return {?}
+     */
+    destroy() {
+        /** @type {?} */
+        const hmrEnabled = isBrowser ? ((/** @type {?} */ (window))).hmrEnabled : false;
+        if (!hmrEnabled && this === __stores__[this.storeName]) {
+            delete __stores__[this.storeName];
+            dispatchDeleted(this.storeName);
+            this.setHasCache(false);
+            this.cache.active.complete();
+        }
+    }
+    /**
+     * @private
+     * @param {?} initialState
+     * @return {?}
+     */
+    onInit(initialState) {
+        __stores__[this.storeName] = this;
+        this._setState((/**
+         * @return {?}
+         */
+        () => initialState));
+        dispatchAdded(this.storeName);
+        if (this.isResettable()) {
+            this._initialState = initialState;
+        }
+        isDev() && assertStoreHasName(this.storeName, this.constructor.name);
+    }
+    /**
+     * @private
+     * @param {?} state
+     * @param {?=} _dispatchAction
+     * @return {?}
+     */
+    dispatch(state, _dispatchAction = true) {
+        this.store.next(state);
+        if (_dispatchAction) {
+            dispatchUpdate(this.storeName);
+            resetCustomAction();
+        }
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    watchTransaction() {
+        commit().subscribe((/**
+         * @return {?}
+         */
+        () => {
+            this.inTransaction = false;
+            this.dispatch(this._value());
+        }));
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    isResettable() {
+        if (this.resettable === false) {
+            return false;
+        }
+        return this.resettable || getAkitaConfig().resettable;
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    handleTransaction() {
+        if (!this.inTransaction) {
+            this.watchTransaction();
+            this.inTransaction = true;
+        }
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    getCacheTTL() {
+        return (this.cacheConfig && this.cacheConfig.ttl) || getAkitaConfig().ttl;
+    }
+}
+Store.ɵfac = function Store_Factory(t) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinvalidFactory"](); };
+Store.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineDirective"]({ type: Store });
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @param {?} value
+ * @return {?}
+ */
+function isObject(value) {
+    /** @type {?} */
+    const type = typeof value;
+    return value != null && (type == 'object' || type == 'function');
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @param {?} idOrOptions
+ * @param {?} ids
+ * @param {?} currentActive
+ * @return {?}
+ */
+function getActiveEntities(idOrOptions, ids, currentActive) {
+    /** @type {?} */
+    let result;
+    if (isArray(idOrOptions)) {
+        result = idOrOptions;
+    }
+    else {
+        if (isObject(idOrOptions)) {
+            if (isNil(currentActive))
+                return;
+            ((/** @type {?} */ (idOrOptions))) = Object.assign({ wrap: true }, idOrOptions);
+            /** @type {?} */
+            const currentIdIndex = ids.indexOf((/** @type {?} */ (currentActive)));
+            if (((/** @type {?} */ (idOrOptions))).prev) {
+                /** @type {?} */
+                const isFirst = currentIdIndex === 0;
+                if (isFirst && !((/** @type {?} */ (idOrOptions))).wrap)
+                    return;
+                result = isFirst ? ids[ids.length - 1] : ((/** @type {?} */ (ids[currentIdIndex - 1])));
+            }
+            else if (((/** @type {?} */ (idOrOptions))).next) {
+                /** @type {?} */
+                const isLast = ids.length === currentIdIndex + 1;
+                if (isLast && !((/** @type {?} */ (idOrOptions))).wrap)
+                    return;
+                result = isLast ? ids[0] : ((/** @type {?} */ (ids[currentIdIndex + 1])));
+            }
+        }
+        else {
+            if (idOrOptions === currentActive)
+                return;
+            result = (/** @type {?} */ (idOrOptions));
+        }
+    }
+    return result;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @template S, E
+ * @param {?} __0
+ * @return {?}
+ */
+function addEntities({ state, entities, idKey, options = {}, preAddEntity }) {
+    /** @type {?} */
+    let newEntities = {};
+    /** @type {?} */
+    let newIds = [];
+    /** @type {?} */
+    let hasNewEntities = false;
+    for (const entity of entities) {
+        if (hasEntity(state.entities, entity[idKey]) === false) {
+            // evaluate the middleware first to support dynamic ids
+            /** @type {?} */
+            const current = preAddEntity(entity);
+            /** @type {?} */
+            const entityId = current[idKey];
+            newEntities[entityId] = current;
+            if (options.prepend)
+                newIds.unshift(entityId);
+            else
+                newIds.push(entityId);
+            hasNewEntities = true;
+        }
+    }
+    return hasNewEntities
+        ? {
+            newState: Object.assign({}, state, { entities: Object.assign({}, state.entities, newEntities), ids: options.prepend ? [...newIds, ...state.ids] : [...state.ids, ...newIds] }),
+            newIds
+        }
+        : null;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @template T
+ * @param {?} value
+ * @return {?}
+ */
+function coerceArray(value) {
+    if (isNil(value)) {
+        return [];
+    }
+    return Array.isArray(value) ? value : [value];
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @template S, E
+ * @param {?} __0
+ * @return {?}
+ */
+function removeEntities({ state, ids }) {
+    if (isNil(ids))
+        return removeAllEntities(state);
+    /** @type {?} */
+    const entities = state.entities;
+    /** @type {?} */
+    let newEntities = {};
+    for (const id of state.ids) {
+        if (ids.includes(id) === false) {
+            newEntities[id] = entities[id];
+        }
+    }
+    /** @type {?} */
+    const newState = Object.assign({}, state, { entities: newEntities, ids: state.ids.filter((/**
+         * @param {?} current
+         * @return {?}
+         */
+        current => ids.includes(current) === false)) });
+    if (hasActiveState(state)) {
+        newState.active = resolveActiveEntity(newState);
+    }
+    return newState;
+}
+// @internal
+/**
+ * @template S
+ * @param {?} state
+ * @return {?}
+ */
+function removeAllEntities(state) {
+    return Object.assign({}, state, { entities: {}, ids: [], active: isMultiActiveState(state.active) ? [] : null });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/** @type {?} */
+const getInitialEntitiesState = (/**
+ * @return {?}
+ */
+() => ((/** @type {?} */ ({
+    entities: {},
+    ids: [],
+    loading: true,
+    error: null
+}))));
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @template S, E
+ * @param {?} __0
+ * @return {?}
+ */
+function updateEntities({ state, ids, idKey, newStateOrFn, preUpdateEntity, producerFn }) {
+    /** @type {?} */
+    const updatedEntities = {};
+    /** @type {?} */
+    let isUpdatingIdKey = false;
+    /** @type {?} */
+    let idToUpdate;
+    for (const id of ids) {
+        // if the entity doesn't exist don't do anything
+        if (hasEntity(state.entities, id) === false) {
+            continue;
+        }
+        /** @type {?} */
+        const oldEntity = state.entities[id];
+        /** @type {?} */
+        let newState;
+        if (isFunction(newStateOrFn)) {
+            newState = isFunction(producerFn) ? producerFn(oldEntity, newStateOrFn) : newStateOrFn(oldEntity);
+        }
+        else {
+            newState = newStateOrFn;
+        }
+        /** @type {?} */
+        const isIdChanged = newState.hasOwnProperty(idKey) && newState[idKey] !== oldEntity[idKey];
+        /** @type {?} */
+        let newEntity;
+        idToUpdate = id;
+        if (isIdChanged) {
+            isUpdatingIdKey = true;
+            idToUpdate = newState[idKey];
+        }
+        /** @type {?} */
+        const merged = Object.assign({}, oldEntity, newState);
+        if (isPlainObject(oldEntity)) {
+            newEntity = merged;
+        }
+        else {
+            /**
+             * In case that new state is class of it's own, there's
+             * a possibility that it will be different than the old
+             * class.
+             * For example, Old state is an instance of animal class
+             * and new state is instance of person class.
+             * To avoid run over new person class with the old animal
+             * class we check if the new state is a class of it's own.
+             * If so, use it. Otherwise, use the old state class
+             */
+            if (isPlainObject(newState)) {
+                newEntity = new ((/** @type {?} */ (oldEntity))).constructor(merged);
+            }
+            else {
+                newEntity = new ((/** @type {?} */ (newState))).constructor(merged);
+            }
+        }
+        updatedEntities[idToUpdate] = preUpdateEntity(oldEntity, newEntity);
+    }
+    /** @type {?} */
+    let updatedIds = state.ids;
+    /** @type {?} */
+    let stateEntities = state.entities;
+    if (isUpdatingIdKey) {
+        const [id] = ids;
+        const _a = state.entities, _b = id, deletedEntity = _a[_b], rest = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(_a, [typeof _b === "symbol" ? _b : _b + ""]);
+        stateEntities = rest;
+        updatedIds = state.ids.map((/**
+         * @param {?} current
+         * @return {?}
+         */
+        current => (current === id ? idToUpdate : current)));
+    }
+    return Object.assign({}, state, { entities: Object.assign({}, stateEntities, updatedEntities), ids: updatedIds });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @param {?} value
+ * @return {?}
+ */
+function isUndefined(value) {
+    return value === undefined;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @enum {number} */
+const EntityActions = {
+    Set: 0,
+    Add: 1,
+    Update: 2,
+    Remove: 3,
+};
+EntityActions[EntityActions.Set] = 'Set';
+EntityActions[EntityActions.Add] = 'Add';
+EntityActions[EntityActions.Update] = 'Update';
+EntityActions[EntityActions.Remove] = 'Remove';
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+const DEFAULT_ID_KEY = 'id';
+
+var _a;
+/**
+ *
+ * Store for managing a collection of entities
+ *
+ * \@example
+ *
+ * export interface WidgetsState extends EntityState<Widget> { }
+ *
+ * \@StoreConfig({ name: 'widgets' })
+ *  export class WidgetsStore extends EntityStore<WidgetsState> {
+ *   constructor() {
+ *     super();
+ *   }
+ * }
+ *
+ *
+ * @template S, EntityType, IDType
+ */
+class EntityStore extends Store {
+    /**
+     * @param {?=} initialState
+     * @param {?=} options
+     */
+    constructor(initialState = {}, options = {}) {
+        super(Object.assign({}, getInitialEntitiesState(), initialState), options);
+        this.options = options;
+        this.entityActions = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+    }
+    // @internal
+    /**
+     * @return {?}
+     */
+    get selectEntityAction$() {
+        return this.entityActions.asObservable();
+    }
+    // @internal
+    /**
+     * @return {?}
+     */
+    get idKey() {
+        return ((/** @type {?} */ (this.config))).idKey || this.options.idKey || DEFAULT_ID_KEY;
+    }
+    /**
+     *
+     * Replace current collection with provided collection
+     *
+     * \@example
+     *
+     * this.store.set([Entity, Entity])
+     * this.store.set({ids: [], entities: {}})
+     * this.store.set({ 1: {}, 2: {}})
+     *
+     * @param {?} entities
+     * @param {?=} options
+     * @return {?}
+     */
+    set(entities, options = {}) {
+        if (isNil(entities))
+            return;
+        isDev() && setAction('Set Entity');
+        /** @type {?} */
+        const isNativePreAdd = this.akitaPreAddEntity === EntityStore.prototype.akitaPreAddEntity;
+        this._setState((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => {
+            /** @type {?} */
+            const newState = setEntities({
+                state,
+                entities,
+                idKey: this.idKey,
+                preAddEntity: this.akitaPreAddEntity,
+                isNativePreAdd
+            });
+            if (isUndefined(options.activeId) === false) {
+                ((/** @type {?} */ (newState))).active = options.activeId;
+            }
+            return newState;
+        }));
+        this.setHasCache(true, { restartTTL: true });
+        if (this.hasInitialUIState()) {
+            this.handleUICreation();
+        }
+        this.entityActions.next({ type: EntityActions.Set, ids: this.ids });
+    }
+    /**
+     * Add entities
+     *
+     * \@example
+     *
+     * this.store.add([Entity, Entity])
+     * this.store.add(Entity)
+     * this.store.add(Entity, { prepend: true })
+     *
+     * this.store.add(Entity, { loading: false })
+     * @param {?} entities
+     * @param {?=} options
+     * @return {?}
+     */
+    add(entities, options = { loading: false }) {
+        /** @type {?} */
+        const collection = coerceArray(entities);
+        if (isEmpty(collection))
+            return;
+        /** @type {?} */
+        const data = addEntities({
+            state: this._value(),
+            preAddEntity: this.akitaPreAddEntity,
+            entities: collection,
+            idKey: this.idKey,
+            options
+        });
+        if (data) {
+            isDev() && setAction('Add Entity');
+            data.newState.loading = options.loading;
+            this._setState((/**
+             * @return {?}
+             */
+            () => data.newState));
+            if (this.hasInitialUIState()) {
+                this.handleUICreation(true);
+            }
+            this.entityActions.next({ type: EntityActions.Add, ids: data.newIds });
+        }
+    }
+    /**
+     * @param {?} idsOrFnOrState
+     * @param {?=} newStateOrFn
+     * @return {?}
+     */
+    update(idsOrFnOrState, newStateOrFn) {
+        if (isUndefined(newStateOrFn)) {
+            super.update((/** @type {?} */ (idsOrFnOrState)));
+            return;
+        }
+        /** @type {?} */
+        let ids = [];
+        if (isFunction(idsOrFnOrState)) {
+            // We need to filter according the predicate function
+            ids = this.ids.filter((/**
+             * @param {?} id
+             * @return {?}
+             */
+            id => ((/** @type {?} */ (idsOrFnOrState)))(this.entities[id])));
+        }
+        else {
+            // If it's nil we want all of them
+            ids = isNil(idsOrFnOrState) ? this.ids : coerceArray((/** @type {?} */ (idsOrFnOrState)));
+        }
+        if (isEmpty(ids))
+            return;
+        isDev() && setAction('Update Entity', ids);
+        this._setState((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => updateEntities({
+            idKey: this.idKey,
+            ids,
+            preUpdateEntity: this.akitaPreUpdateEntity,
+            state,
+            newStateOrFn,
+            producerFn: this._producerFn
+        })));
+        this.entityActions.next({ type: EntityActions.Update, ids });
+    }
+    /**
+     *
+     * Create or update
+     *
+     * \@example
+     *
+     * store.upsert(1, { active: true })
+     * store.upsert([2, 3], { active: true })
+     * store.upsert([2, 3], entity => ({ isOpen: !entity.isOpen}))
+     *
+     * @param {?} ids
+     * @param {?} newState
+     * @param {?=} options
+     * @return {?}
+     */
+    upsert(ids, newState, options = {}) {
+        /** @type {?} */
+        const toArray = coerceArray(ids);
+        /** @type {?} */
+        const predicate = (/**
+         * @param {?} isUpdate
+         * @return {?}
+         */
+        isUpdate => (/**
+         * @param {?} id
+         * @return {?}
+         */
+        id => hasEntity(this.entities, id) === isUpdate));
+        /** @type {?} */
+        const isClassBased = isFunction(options.baseClass);
+        /** @type {?} */
+        const updateIds = toArray.filter(predicate(true));
+        /** @type {?} */
+        const newEntities = toArray.filter(predicate(false)).map((/**
+         * @param {?} id
+         * @return {?}
+         */
+        id => {
+            /** @type {?} */
+            let entity = isFunction(newState) ? newState((/** @type {?} */ ({}))) : newState;
+            /** @type {?} */
+            const withId = Object.assign({}, ((/** @type {?} */ (entity))), { [this.idKey]: id });
+            if (isClassBased) {
+                return new options.baseClass(withId);
+            }
+            return withId;
+        }));
+        // it can be any of the three types
+        this.update((/** @type {?} */ (updateIds)), (/** @type {?} */ (newState)));
+        this.add(newEntities);
+        isDev() && logAction('Upsert Entity');
+    }
+    /**
+     *
+     * Upsert entity collection (idKey must be present)
+     *
+     * \@example
+     *
+     * store.upsertMany([ { id: 1 }, { id: 2 }]);
+     *
+     * store.upsertMany([ { id: 1 }, { id: 2 }], { loading: true  });
+     * store.upsertMany([ { id: 1 }, { id: 2 }], { baseClass: Todo  });
+     *
+     * @param {?} entities
+     * @param {?=} options
+     * @return {?}
+     */
+    upsertMany(entities, options = {}) {
+        /** @type {?} */
+        const addedIds = [];
+        /** @type {?} */
+        const updatedIds = [];
+        /** @type {?} */
+        const updatedEntities = {};
+        // Update the state directly to optimize performance
+        for (const entity of entities) {
+            /** @type {?} */
+            const withPreCheckHook = this.akitaPreCheckEntity(entity);
+            /** @type {?} */
+            const id = withPreCheckHook[this.idKey];
+            if (hasEntity(this.entities, id)) {
+                /** @type {?} */
+                const prev = this._value().entities[id];
+                /** @type {?} */
+                const merged = Object.assign({}, this._value().entities[id], withPreCheckHook);
+                /** @type {?} */
+                const next = options.baseClass ? new options.baseClass(merged) : merged;
+                /** @type {?} */
+                const withHook = this.akitaPreUpdateEntity(prev, next);
+                /** @type {?} */
+                const nextId = withHook[this.idKey];
+                updatedEntities[nextId] = withHook;
+                updatedIds.push(nextId);
+            }
+            else {
+                /** @type {?} */
+                const newEntity = options.baseClass ? new options.baseClass(withPreCheckHook) : withPreCheckHook;
+                /** @type {?} */
+                const withHook = this.akitaPreAddEntity(newEntity);
+                /** @type {?} */
+                const nextId = withHook[this.idKey];
+                addedIds.push(nextId);
+                updatedEntities[nextId] = withHook;
+            }
+        }
+        isDev() && logAction('Upsert Many');
+        this._setState((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => (Object.assign({}, state, { ids: addedIds.length ? [...state.ids, ...addedIds] : state.ids, entities: Object.assign({}, state.entities, updatedEntities), loading: !!options.loading }))));
+        updatedIds.length && this.entityActions.next({ type: EntityActions.Update, ids: updatedIds });
+        addedIds.length && this.entityActions.next({ type: EntityActions.Add, ids: addedIds });
+        if (addedIds.length && this.hasUIStore()) {
+            this.handleUICreation(true);
+        }
+    }
+    /**
+     *
+     * Replace one or more entities (except the id property)
+     *
+     *
+     * \@example
+     *
+     * this.store.replace(5, newEntity)
+     * this.store.replace([1,2,3], newEntity)
+     * @param {?} ids
+     * @param {?} newState
+     * @return {?}
+     */
+    replace(ids, newState) {
+        /** @type {?} */
+        const toArray = coerceArray(ids);
+        if (isEmpty(toArray))
+            return;
+        /** @type {?} */
+        let replaced = {};
+        for (const id of toArray) {
+            newState[this.idKey] = id;
+            replaced[id] = newState;
+        }
+        isDev() && setAction('Replace Entity', ids);
+        this._setState((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => (Object.assign({}, state, { entities: Object.assign({}, state.entities, replaced) }))));
+    }
+    /**
+     *
+     * Move entity inside the collection
+     *
+     *
+     * \@example
+     *
+     * this.store.move(fromIndex, toIndex)
+     * @param {?} from
+     * @param {?} to
+     * @return {?}
+     */
+    move(from$$1, to) {
+        /** @type {?} */
+        const ids = this.ids.slice();
+        ids.splice(to < 0 ? ids.length + to : to, 0, ids.splice(from$$1, 1)[0]);
+        isDev() && setAction('Move Entity');
+        this._setState((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => (Object.assign({}, state, { entities: Object.assign({}, state.entities), ids }))));
+    }
+    /**
+     * @param {?=} idsOrFn
+     * @return {?}
+     */
+    remove(idsOrFn) {
+        if (isEmpty(this.ids))
+            return;
+        /** @type {?} */
+        const idPassed = isDefined(idsOrFn);
+        // null means remove all
+        /** @type {?} */
+        let ids = [];
+        if (isFunction(idsOrFn)) {
+            ids = this.ids.filter((/**
+             * @param {?} entityId
+             * @return {?}
+             */
+            entityId => idsOrFn(this.entities[entityId])));
+        }
+        else {
+            ids = idPassed ? coerceArray(idsOrFn) : null;
+        }
+        if (isEmpty(ids))
+            return;
+        isDev() && setAction('Remove Entity', ids);
+        this._setState((/**
+         * @param {?} state
+         * @return {?}
+         */
+        (state) => removeEntities({ state, ids })));
+        if (ids === null) {
+            this.setHasCache(false);
+        }
+        this.handleUIRemove(ids);
+        this.entityActions.next({ type: EntityActions.Remove, ids });
+    }
+    /**
+     *
+     * Update the active entity
+     *
+     * \@example
+     *
+     * this.store.updateActive({ completed: true })
+     * this.store.updateActive(active => {
+     *   return {
+     *     config: {
+     *      ..active.config,
+     *      date
+     *     }
+     *   }
+     * })
+     * @param {?} newStateOrCallback
+     * @return {?}
+     */
+    updateActive(newStateOrCallback) {
+        /** @type {?} */
+        const ids = coerceArray(this.active);
+        isDev() && setAction('Update Active', ids);
+        this.update(ids, (/** @type {?} */ (newStateOrCallback)));
+    }
+    /**
+     * @param {?} idOrOptions
+     * @return {?}
+     */
+    setActive(idOrOptions) {
+        /** @type {?} */
+        const active = getActiveEntities(idOrOptions, this.ids, this.active);
+        if (active === undefined) {
+            return;
+        }
+        isDev() && setAction('Set Active', active);
+        this._setActive(active);
+    }
+    /**
+     * Add active entities
+     *
+     * \@example
+     *
+     * store.addActive(2);
+     * store.addActive([3, 4, 5]);
+     * @template T
+     * @param {?} ids
+     * @return {?}
+     */
+    addActive(ids) {
+        /** @type {?} */
+        const toArray = coerceArray(ids);
+        if (isEmpty(toArray))
+            return;
+        /** @type {?} */
+        const everyExist = toArray.every((/**
+         * @param {?} id
+         * @return {?}
+         */
+        id => this.active.indexOf(id) > -1));
+        if (everyExist)
+            return;
+        isDev() && setAction('Add Active', ids);
+        this._setState((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => {
+            /**
+             * Protect against case that one of the items in the array exist
+             * @type {?}
+             */
+            const uniques = Array.from(new Set([...((/** @type {?} */ (state.active))), ...toArray]));
+            return Object.assign({}, state, { active: uniques });
+        }));
+    }
+    /**
+     * Remove active entities
+     *
+     * \@example
+     *
+     * store.removeActive(2)
+     * store.removeActive([3, 4, 5])
+     * @template T
+     * @param {?} ids
+     * @return {?}
+     */
+    removeActive(ids) {
+        /** @type {?} */
+        const toArray = coerceArray(ids);
+        if (isEmpty(toArray))
+            return;
+        /** @type {?} */
+        const someExist = toArray.some((/**
+         * @param {?} id
+         * @return {?}
+         */
+        id => this.active.indexOf(id) > -1));
+        if (!someExist)
+            return;
+        isDev() && setAction('Remove Active', ids);
+        this._setState((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => {
+            return Object.assign({}, state, { active: Array.isArray(state.active) ? state.active.filter((/**
+                 * @param {?} currentId
+                 * @return {?}
+                 */
+                currentId => toArray.indexOf(currentId) === -1)) : null });
+        }));
+    }
+    /**
+     * Toggle active entities
+     *
+     * \@example
+     *
+     * store.toggle(2)
+     * store.toggle([3, 4, 5])
+     * @template T
+     * @param {?} ids
+     * @return {?}
+     */
+    toggleActive(ids) {
+        /** @type {?} */
+        const toArray = coerceArray(ids);
+        /** @type {?} */
+        const filterExists = (/**
+         * @param {?} remove
+         * @return {?}
+         */
+        remove => (/**
+         * @param {?} id
+         * @return {?}
+         */
+        id => this.active.includes(id) === remove));
+        /** @type {?} */
+        const remove = toArray.filter(filterExists(true));
+        /** @type {?} */
+        const add = toArray.filter(filterExists(false));
+        this.removeActive(remove);
+        this.addActive(add);
+        isDev() && logAction('Toggle Active');
+    }
+    /**
+     *
+     * Create sub UI store for managing Entity's UI state
+     *
+     * \@example
+     *
+     * export type ProductUI = {
+     *   isLoading: boolean;
+     *   isOpen: boolean
+     * }
+     *
+     * interface ProductsUIState extends EntityState<ProductUI> {}
+     *
+     * export class ProductsStore EntityStore<ProductsState, Product> {
+     *   ui: EntityUIStore<ProductsUIState, ProductUI>;
+     *
+     *   constructor() {
+     *     super();
+     *     this.createUIStore();
+     *   }
+     *
+     * }
+     * @param {?=} initialState
+     * @param {?=} storeConfig
+     * @return {?}
+     */
+    createUIStore(initialState = {}, storeConfig = {}) {
+        /** @type {?} */
+        const defaults = { name: `UI/${this.storeName}`, idKey: this.idKey };
+        this.ui = new EntityUIStore(initialState, Object.assign({}, defaults, storeConfig));
+        return this.ui;
+    }
+    // @internal
+    /**
+     * @return {?}
+     */
+    destroy() {
+        super.destroy();
+        if (this.ui instanceof EntityStore) {
+            this.ui.destroy();
+        }
+        this.entityActions.complete();
+    }
+    // @internal
+    /**
+     * @param {?} _
+     * @param {?} nextEntity
+     * @return {?}
+     */
+    akitaPreUpdateEntity(_, nextEntity) {
+        return (/** @type {?} */ (nextEntity));
+    }
+    // @internal
+    /**
+     * @param {?} newEntity
+     * @return {?}
+     */
+    akitaPreAddEntity(newEntity) {
+        return (/** @type {?} */ (newEntity));
+    }
+    // @internal
+    /**
+     * @param {?} newEntity
+     * @return {?}
+     */
+    akitaPreCheckEntity(newEntity) {
+        return newEntity;
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    get ids() {
+        return this._value().ids;
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    get entities() {
+        return this._value().entities;
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    get active() {
+        return this._value().active;
+    }
+    /**
+     * @private
+     * @param {?} ids
+     * @return {?}
+     */
+    _setActive(ids) {
+        this._setState((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => {
+            return Object.assign({}, state, { active: ids });
+        }));
+    }
+    /**
+     * @private
+     * @param {?=} add
+     * @return {?}
+     */
+    handleUICreation(add = false) {
+        /** @type {?} */
+        const ids = this.ids;
+        /** @type {?} */
+        const isFunc = isFunction(this.ui._akitaCreateEntityFn);
+        /** @type {?} */
+        let uiEntities;
+        /** @type {?} */
+        const createFn = (/**
+         * @param {?} id
+         * @return {?}
+         */
+        id => {
+            /** @type {?} */
+            const current = this.entities[id];
+            /** @type {?} */
+            const ui = isFunc ? this.ui._akitaCreateEntityFn(current) : this.ui._akitaCreateEntityFn;
+            return Object.assign({ [this.idKey]: current[this.idKey] }, ui);
+        });
+        if (add) {
+            uiEntities = this.ids.filter((/**
+             * @param {?} id
+             * @return {?}
+             */
+            id => isUndefined(this.ui.entities[id]))).map(createFn);
+        }
+        else {
+            uiEntities = ids.map(createFn);
+        }
+        add ? this.ui.add(uiEntities) : this.ui.set(uiEntities);
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    hasInitialUIState() {
+        return this.hasUIStore() && isUndefined(this.ui._akitaCreateEntityFn) === false;
+    }
+    /**
+     * @private
+     * @param {?} ids
+     * @return {?}
+     */
+    handleUIRemove(ids) {
+        if (this.hasUIStore()) {
+            this.ui.remove(ids);
+        }
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    hasUIStore() {
+        return this.ui instanceof EntityUIStore;
+    }
+}
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    transaction(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Function),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [Object, Object, Object]),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", void 0)
+], EntityStore.prototype, "upsert", null);
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    transaction(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Function),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [typeof (_a = typeof T !== "undefined" && T) === "function" ? _a : Object]),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", void 0)
+], EntityStore.prototype, "toggleActive", null);
+// @internal
+/**
+ * @template UIState, DEPRECATED
+ */
+class EntityUIStore extends EntityStore {
+    /**
+     * @param {?=} initialState
+     * @param {?=} storeConfig
+     */
+    constructor(initialState = {}, storeConfig = {}) {
+        super(initialState, storeConfig);
+    }
+    /**
+     *
+     * Set the initial UI entity state. This function will determine the entity's
+     * initial state when we call `set()` or `add()`.
+     *
+     * \@example
+     *
+     * constructor() {
+     *   super();
+     *   this.createUIStore().setInitialEntityState(entity => ({ isLoading: false, isOpen: true }));
+     *   this.createUIStore().setInitialEntityState({ isLoading: false, isOpen: true });
+     * }
+     *
+     * @template EntityUI, Entity
+     * @param {?} createFn
+     * @return {?}
+     */
+    setInitialEntityState(createFn) {
+        this._akitaCreateEntityFn = createFn;
+    }
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @template T
+ * @param {?} collection
+ * @param {?} idsOrPredicate
+ * @param {?} idKey
+ * @return {?}
+ */
+function find(collection, idsOrPredicate, idKey) {
+    /** @type {?} */
+    const result = [];
+    if (isFunction(idsOrPredicate)) {
+        for (const entity of collection) {
+            if (idsOrPredicate(entity) === true) {
+                result.push(entity);
+            }
+        }
+    }
+    else {
+        /** @type {?} */
+        const toSet = coerceArray(idsOrPredicate).reduce((/**
+         * @param {?} acc
+         * @param {?} current
+         * @return {?}
+         */
+        (acc, current) => acc.add(current)), new Set());
+        for (const entity of collection) {
+            if (toSet.has(entity[idKey])) {
+                result.push(entity);
+            }
+        }
+    }
+    return result;
+}
+// @internal
+/**
+ * @template T
+ * @return {?}
+ */
+function distinctUntilArrayItemChanged() {
+    return Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["distinctUntilChanged"])((/**
+     * @param {?} prevCollection
+     * @param {?} currentCollection
+     * @return {?}
+     */
+    (prevCollection, currentCollection) => {
+        if (prevCollection === currentCollection) {
+            return true;
+        }
+        if (isArray(prevCollection) === false || isArray(currentCollection) === false) {
+            return false;
+        }
+        if (isEmpty(prevCollection) && isEmpty(currentCollection)) {
+            return true;
+        }
+        // if item is new in the current collection but not exist in the prev collection
+        /** @type {?} */
+        const hasNewItem = hasChange(currentCollection, prevCollection);
+        if (hasNewItem) {
+            return false;
+        }
+        /** @type {?} */
+        const isOneOfItemReferenceChanged = hasChange(prevCollection, currentCollection);
+        // return false means there is a change and we want to call next()
+        return isOneOfItemReferenceChanged === false;
+    }));
+}
+// @internal
+/**
+ * @template T
+ * @param {?} first
+ * @param {?} second
+ * @return {?}
+ */
+function hasChange(first, second) {
+    /** @type {?} */
+    const hasChange = second.some((/**
+     * @param {?} currentItem
+     * @return {?}
+     */
+    currentItem => {
+        /** @type {?} */
+        const oldItem = first.find((/**
+         * @param {?} prevItem
+         * @return {?}
+         */
+        prevItem => prevItem === currentItem));
+        return oldItem === undefined;
+    }));
+    return hasChange;
+}
+/**
+ * @template T
+ * @param {?} idsOrPredicate
+ * @param {?=} idKey
+ * @return {?}
+ */
+function arrayFind(idsOrPredicate, idKey) {
+    return (/**
+     * @param {?} source
+     * @return {?}
+     */
+    function (source) {
+        return source.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])((/**
+         * @param {?} collection
+         * @return {?}
+         */
+        (collection) => {
+            // which means the user deleted the root entity or set the collection to nil
+            if (isArray(collection) === false) {
+                return collection;
+            }
+            return find(collection, idsOrPredicate, idKey || DEFAULT_ID_KEY);
+        })), distinctUntilArrayItemChanged(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])((/**
+         * @param {?} value
+         * @return {?}
+         */
+        value => {
+            if (isArray(value) === false) {
+                return value;
+            }
+            if (isArray(idsOrPredicate) || isFunction(idsOrPredicate)) {
+                return value;
+            }
+            return value[0];
+        })));
+    });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @enum {string} */
+const Order = {
+    ASC: 'asc',
+    DESC: 'desc',
+};
+// @internal
+/**
+ * @param {?} key
+ * @param {?=} order
+ * @return {?}
+ */
+function compareValues(key, order = Order.ASC) {
+    return (/**
+     * @param {?} a
+     * @param {?} b
+     * @return {?}
+     */
+    function (a, b) {
+        if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
+            return 0;
+        }
+        /** @type {?} */
+        const varA = typeof a[key] === 'string' ? a[key].toUpperCase() : a[key];
+        /** @type {?} */
+        const varB = typeof b[key] === 'string' ? b[key].toUpperCase() : b[key];
+        /** @type {?} */
+        let comparison = 0;
+        if (varA > varB) {
+            comparison = 1;
+        }
+        else if (varA < varB) {
+            comparison = -1;
+        }
+        return order == Order.DESC ? comparison * -1 : comparison;
+    });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @template E, S
+ * @param {?} state
+ * @param {?} options
+ * @return {?}
+ */
+function entitiesToArray(state, options) {
+    /** @type {?} */
+    let arr = [];
+    const { ids, entities } = state;
+    const { filterBy, limitTo, sortBy, sortByOrder } = options;
+    for (let i = 0; i < ids.length; i++) {
+        /** @type {?} */
+        const entity = entities[ids[i]];
+        if (!filterBy) {
+            arr.push(entity);
+            continue;
+        }
+        /** @type {?} */
+        const toArray = coerceArray(filterBy);
+        /** @type {?} */
+        const allPass = toArray.every((/**
+         * @param {?} fn
+         * @return {?}
+         */
+        fn => fn(entity, i)));
+        if (allPass) {
+            arr.push(entity);
+        }
+    }
+    if (sortBy) {
+        /** @type {?} */
+        let _sortBy = isFunction(sortBy) ? sortBy : compareValues(sortBy, sortByOrder);
+        arr = arr.sort((/**
+         * @param {?} a
+         * @param {?} b
+         * @return {?}
+         */
+        (a, b) => _sortBy(a, b, state)));
+    }
+    /** @type {?} */
+    const length = Math.min(limitTo || arr.length, arr.length);
+    return length === arr.length ? arr : arr.slice(0, length);
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @template S, E
+ * @param {?} state
+ * @param {?} options
+ * @return {?}
+ */
+function entitiesToMap(state, options) {
+    /** @type {?} */
+    const map$$1 = {};
+    const { filterBy, limitTo } = options;
+    const { ids, entities } = state;
+    if (!filterBy && !limitTo) {
+        return entities;
+    }
+    /** @type {?} */
+    const hasLimit = isNil(limitTo) === false;
+    if (filterBy && hasLimit) {
+        /** @type {?} */
+        let count = 0;
+        for (let i = 0, length = ids.length; i < length; i++) {
+            if (count === limitTo)
+                break;
+            /** @type {?} */
+            const id = ids[i];
+            /** @type {?} */
+            const entity = entities[id];
+            /** @type {?} */
+            const allPass = coerceArray(filterBy).every((/**
+             * @param {?} fn
+             * @return {?}
+             */
+            fn => fn(entity, i)));
+            if (allPass) {
+                map$$1[id] = entity;
+                count++;
+            }
+        }
+    }
+    else {
+        /** @type {?} */
+        const finalLength = Math.min(limitTo || ids.length, ids.length);
+        for (let i = 0; i < finalLength; i++) {
+            /** @type {?} */
+            const id = ids[i];
+            /** @type {?} */
+            const entity = entities[id];
+            if (!filterBy) {
+                map$$1[id] = entity;
+                continue;
+            }
+            /** @type {?} */
+            const allPass = coerceArray(filterBy).every((/**
+             * @param {?} fn
+             * @return {?}
+             */
+            fn => fn(entity, i)));
+            if (allPass) {
+                map$$1[id] = entity;
+            }
+        }
+    }
+    return map$$1;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @param {?} value
+ * @return {?}
+ */
+function isString(value) {
+    return typeof value === 'string';
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @template E
+ * @param {?} predicate
+ * @param {?} entities
+ * @return {?}
+ */
+function findEntityByPredicate(predicate, entities) {
+    for (const entityId of Object.keys(entities)) {
+        if (predicate(entities[entityId]) === true) {
+            return entityId;
+        }
+    }
+    return undefined;
+}
+// @internal
+/**
+ * @param {?} id
+ * @param {?} project
+ * @return {?}
+ */
+function getEntity(id, project) {
+    return (/**
+     * @param {?} entities
+     * @return {?}
+     */
+    function (entities) {
+        /** @type {?} */
+        const entity = entities[id];
+        if (isUndefined(entity)) {
+            return undefined;
+        }
+        if (!project) {
+            return entity;
+        }
+        if (isString(project)) {
+            return entity[project];
+        }
+        return ((/** @type {?} */ (project)))(entity);
+    });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @template T, V
+ * @param {?} arr
+ * @param {?} callbackFn
+ * @return {?}
+ */
+function mapSkipUndefined(arr, callbackFn) {
+    return arr.reduce((/**
+     * @param {?} result
+     * @param {?} value
+     * @param {?} index
+     * @param {?} array
+     * @return {?}
+     */
+    (result, value, index, array) => {
+        /** @type {?} */
+        const val = callbackFn(value, index, array);
+        if (val !== undefined) {
+            result.push(val);
+        }
+        return result;
+    }), []);
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+const queryConfigKey = 'akitaQueryConfig';
+/**
+ * @template E
+ * @param {?} metadata
+ * @return {?}
+ */
+function QueryConfig(metadata) {
+    return (/**
+     * @param {?} constructor
+     * @return {?}
+     */
+    function (constructor) {
+        constructor[queryConfigKey] = {};
+        for (let i = 0, keys = Object.keys(metadata); i < keys.length; i++) {
+            /** @type {?} */
+            const key = keys[i];
+            constructor[queryConfigKey][key] = metadata[key];
+        }
+    });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @template T
+ * @param {?} keysOrFuncs
+ * @return {?}
+ */
+function compareKeys(keysOrFuncs) {
+    return (/**
+     * @template T
+     * @param {?} prevState
+     * @param {?} currState
+     * @return {?}
+     */
+    function (prevState, currState) {
+        /** @type {?} */
+        const isFns = isFunction(keysOrFuncs[0]);
+        // Return when they are NOT changed
+        return keysOrFuncs.some((/**
+         * @param {?} keyOrFunc
+         * @return {?}
+         */
+        keyOrFunc => {
+            if (isFns) {
+                return keyOrFunc(prevState) !== keyOrFunc(currState);
+            }
+            return prevState[keyOrFunc] !== currState[keyOrFunc];
+        })) === false;
+    });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @template S
+ */
+class Query {
+    /**
+     * @param {?} store
+     */
+    constructor(store) {
+        this.store = store;
+        this.__store__ = store;
+        if (isDev()) {
+            // @internal
+            __queries__[store.storeName] = this;
+        }
+    }
+    /**
+     * @template R
+     * @param {?=} project
+     * @return {?}
+     */
+    select(project) {
+        /** @type {?} */
+        let mapFn;
+        if (isFunction(project)) {
+            mapFn = project;
+        }
+        else if (isString(project)) {
+            mapFn = (/**
+             * @param {?} state
+             * @return {?}
+             */
+            state => state[project]);
+        }
+        else if (Array.isArray(project)) {
+            return (/** @type {?} */ (this.store
+                ._select((/**
+             * @param {?} state
+             * @return {?}
+             */
+            state => state))
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["distinctUntilChanged"])(compareKeys(project)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])((/**
+             * @param {?} state
+             * @return {?}
+             */
+            state => {
+                if (isFunction(project[0])) {
+                    return ((/** @type {?} */ (project))).map((/**
+                     * @param {?} func
+                     * @return {?}
+                     */
+                    func => func(state)));
+                }
+                return ((/** @type {?} */ (project))).reduce((/**
+                 * @param {?} acc
+                 * @param {?} k
+                 * @return {?}
+                 */
+                (acc, k) => {
+                    acc[(/** @type {?} */ (k))] = state[k];
+                    return acc;
+                }), {});
+            })))));
+        }
+        else {
+            mapFn = (/**
+             * @param {?} state
+             * @return {?}
+             */
+            state => state);
+        }
+        return this.store._select(mapFn);
+    }
+    /**
+     * Select the loading state
+     *
+     * \@example
+     *
+     * this.query.selectLoading().subscribe(isLoading => {})
+     * @return {?}
+     */
+    selectLoading() {
+        return this.select((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => ((/** @type {?} */ (state))).loading));
+    }
+    /**
+     * Select the error state
+     *
+     * \@example
+     *
+     * this.query.selectError().subscribe(error => {})
+     * @template ErrorType
+     * @return {?}
+     */
+    selectError() {
+        return this.select((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => ((/** @type {?} */ (state))).error));
+    }
+    /**
+     * Get the store's value
+     *
+     * \@example
+     *
+     * this.query.getValue()
+     *
+     * @return {?}
+     */
+    getValue() {
+        return this.store._value();
+    }
+    /**
+     * Select the cache state
+     *
+     * \@example
+     *
+     * this.query.selectHasCache().pipe(
+     *   switchMap(hasCache => {
+     *     return hasCache ? of() : http().pipe(res => store.set(res))
+     *   })
+     * )
+     * @return {?}
+     */
+    selectHasCache() {
+        return this.store._cache().asObservable();
+    }
+    /**
+     * Whether we've cached data
+     *
+     * \@example
+     *
+     * this.query.getHasCache()
+     *
+     * @return {?}
+     */
+    getHasCache() {
+        return this.store._cache().value;
+    }
+    // @internal
+    /**
+     * @return {?}
+     */
+    get config() {
+        return this.constructor[queryConfigKey];
+    }
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @param {?} options
+ * @param {?} config
+ * @return {?}
+ */
+function sortByOptions(options, config) {
+    options.sortBy = options.sortBy || (config && config.sortBy);
+    options.sortByOrder = options.sortByOrder || (config && config.sortByOrder);
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ *
+ *  The Entity Query is similar to the general Query, with additional functionality tailored for EntityStores.
+ *
+ *  class WidgetsQuery extends QueryEntity<WidgetsState> {
+ *     constructor(protected store: WidgetsStore) {
+ *       super(store);
+ *     }
+ *  }
+ *
+ *
+ *
+ * @template S, EntityType, IDType
+ */
+class QueryEntity extends Query {
+    /**
+     * @param {?} store
+     * @param {?=} options
+     */
+    constructor(store, options = {}) {
+        super(store);
+        this.options = options;
+        this.__store__ = store;
+    }
+    /**
+     * @param {?=} options
+     * @return {?}
+     */
+    selectAll(options = {
+        asObject: false
+    }) {
+        return this.select((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => state.entities)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])((/**
+         * @return {?}
+         */
+        () => this.getAll(options))));
+    }
+    /**
+     * @param {?=} options
+     * @return {?}
+     */
+    getAll(options = { asObject: false, filterBy: undefined, limitTo: undefined }) {
+        if (options.asObject) {
+            return entitiesToMap(this.getValue(), options);
+        }
+        sortByOptions(options, this.config || this.options);
+        return entitiesToArray(this.getValue(), options);
+    }
+    /**
+     * @template R
+     * @param {?} ids
+     * @param {?=} project
+     * @return {?}
+     */
+    selectMany(ids, project) {
+        if (!ids || !ids.length)
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])([]);
+        return this.select((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => state.entities)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])((/**
+         * @param {?} entities
+         * @return {?}
+         */
+        entities => mapSkipUndefined(ids, (/**
+         * @param {?} id
+         * @return {?}
+         */
+        id => getEntity(id, project)(entities))))), distinctUntilArrayItemChanged());
+    }
+    /**
+     * @template R
+     * @param {?} idOrPredicate
+     * @param {?=} project
+     * @return {?}
+     */
+    selectEntity(idOrPredicate, project) {
+        /** @type {?} */
+        let id = idOrPredicate;
+        if (isFunction(idOrPredicate)) {
+            // For performance reason we expect the entity to be in the store
+            ((/** @type {?} */ (id))) = findEntityByPredicate(idOrPredicate, this.getValue().entities);
+        }
+        return this.select((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => state.entities)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(getEntity(id, project)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["distinctUntilChanged"])());
+    }
+    /**
+     * Get an entity by id
+     *
+     * \@example
+     *
+     * this.query.getEntity(1);
+     * @param {?} id
+     * @return {?}
+     */
+    getEntity(id) {
+        return this.getValue().entities[(/** @type {?} */ (id))];
+    }
+    /**
+     * Select the active entity's id
+     *
+     * \@example
+     *
+     * this.query.selectActiveId()
+     * @return {?}
+     */
+    selectActiveId() {
+        return this.select((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => ((/** @type {?} */ (state))).active));
+    }
+    /**
+     * Get the active id
+     *
+     * \@example
+     *
+     * this.query.getActiveId()
+     * @return {?}
+     */
+    getActiveId() {
+        return this.getValue().active;
+    }
+    /**
+     * @template R
+     * @param {?=} project
+     * @return {?}
+     */
+    selectActive(project) {
+        if (isArray(this.getActive())) {
+            return this.selectActiveId().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["switchMap"])((/**
+             * @param {?} ids
+             * @return {?}
+             */
+            ids => this.selectMany(ids, project))));
+        }
+        return this.selectActiveId().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["switchMap"])((/**
+         * @param {?} ids
+         * @return {?}
+         */
+        ids => this.selectEntity(ids, project))));
+    }
+    /**
+     * @return {?}
+     */
+    getActive() {
+        /** @type {?} */
+        const activeId = this.getActiveId();
+        if (isArray(activeId)) {
+            return activeId.map((/**
+             * @param {?} id
+             * @return {?}
+             */
+            id => this.getValue().entities[(/** @type {?} */ (id))]));
+        }
+        return toBoolean(activeId) ? this.getEntity(activeId) : undefined;
+    }
+    /**
+     * Select the store's entity collection length
+     *
+     * \@example
+     *
+     * this.query.selectCount()
+     * this.query.selectCount(entity => entity.completed)
+     * @param {?=} predicate
+     * @return {?}
+     */
+    selectCount(predicate) {
+        return this.select((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => state.entities)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])((/**
+         * @return {?}
+         */
+        () => this.getCount(predicate))));
+    }
+    /**
+     * Get the store's entity collection length
+     *
+     * \@example
+     *
+     * this.query.getCount()
+     * this.query.getCount(entity => entity.completed)
+     * @param {?=} predicate
+     * @return {?}
+     */
+    getCount(predicate) {
+        if (isFunction(predicate)) {
+            return this.getAll().filter(predicate).length;
+        }
+        return this.getValue().ids.length;
+    }
+    /**
+     * @template R
+     * @param {?=} project
+     * @return {?}
+     */
+    selectLast(project) {
+        return this.selectAt((/**
+         * @param {?} ids
+         * @return {?}
+         */
+        ids => ids[ids.length - 1]), project);
+    }
+    /**
+     * @template R
+     * @param {?=} project
+     * @return {?}
+     */
+    selectFirst(project) {
+        return this.selectAt((/**
+         * @param {?} ids
+         * @return {?}
+         */
+        ids => ids[0]), project);
+    }
+    /**
+     * @param {?=} action
+     * @return {?}
+     */
+    selectEntityAction(action) {
+        if (isUndefined(action)) {
+            return this.store.selectEntityAction$;
+        }
+        return this.store.selectEntityAction$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["filter"])((/**
+         * @param {?} ac
+         * @return {?}
+         */
+        ac => ac.type === action)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])((/**
+         * @param {?} action
+         * @return {?}
+         */
+        action => action.ids)));
+    }
+    /**
+     * @param {?=} projectOrIds
+     * @return {?}
+     */
+    hasEntity(projectOrIds) {
+        if (isNil(projectOrIds)) {
+            return this.getValue().ids.length > 0;
+        }
+        if (isFunction(projectOrIds)) {
+            return this.getAll().some(projectOrIds);
+        }
+        if (isArray(projectOrIds)) {
+            return projectOrIds.every((/**
+             * @param {?} id
+             * @return {?}
+             */
+            id => ((/** @type {?} */ (id))) in this.getValue().entities));
+        }
+        return ((/** @type {?} */ (projectOrIds))) in this.getValue().entities;
+    }
+    /**
+     * Returns whether entity store has an active entity
+     *
+     * \@example
+     *
+     * this.query.hasActive()
+     * this.query.hasActive(3)
+     *
+     * @param {?=} id
+     * @return {?}
+     */
+    hasActive(id) {
+        /** @type {?} */
+        const active = this.getValue().active;
+        /** @type {?} */
+        const isIdProvided = isDefined(id);
+        if (Array.isArray(active)) {
+            if (isIdProvided) {
+                return active.includes(id);
+            }
+            return active.length > 0;
+        }
+        return isIdProvided ? active === id : isDefined(active);
+    }
+    /**
+     *
+     * Create sub UI query for querying Entity's UI state
+     *
+     * \@example
+     *
+     *
+     * export class ProductsQuery extends QueryEntity<ProductsState> {
+     *   ui: EntityUIQuery<ProductsUIState>;
+     *
+     *   constructor(protected store: ProductsStore) {
+     *     super(store);
+     *     this.createUIQuery();
+     *   }
+     *
+     * }
+     * @return {?}
+     */
+    createUIQuery() {
+        this.ui = new EntityUIQuery(this.__store__.ui);
+    }
+    /**
+     * @private
+     * @template R
+     * @param {?} mapFn
+     * @param {?=} project
+     * @return {?}
+     */
+    selectAt(mapFn, project) {
+        return this.select((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => (/** @type {?} */ (state.ids)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(mapFn), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["distinctUntilChanged"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["switchMap"])((/**
+         * @param {?} id
+         * @return {?}
+         */
+        (id) => this.selectEntity(id, project))));
+    }
+}
+// @internal
+/**
+ * @template UIState, DEPRECATED
+ */
+class EntityUIQuery extends QueryEntity {
+    /**
+     * @param {?} store
+     */
+    constructor(store) {
+        super(store);
+    }
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@example
+ *
+ * query.selectEntity(2).pipe(filterNil)
+ * @type {?}
+ */
+const filterNil = (/**
+ * @template T
+ * @param {?} source
+ * @return {?}
+ */
+(source) => source.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["filter"])((/**
+ * @param {?} value
+ * @return {?}
+ */
+(value) => value !== null && typeof value !== 'undefined'))));
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@internal
+ *
+ * \@example
+ *
+ * getValue(state, 'todos.ui')
+ *
+ * @param {?} obj
+ * @param {?} prop
+ * @return {?}
+ */
+function getValue(obj, prop) {
+    /** return the whole state  */
+    if (prop.split('.').length === 1) {
+        return obj;
+    }
+    /** @type {?} */
+    const removeStoreName = prop
+        .split('.')
+        .slice(1)
+        .join('.');
+    return removeStoreName.split('.').reduce((/**
+     * @param {?} acc
+     * @param {?} part
+     * @return {?}
+     */
+    (acc, part) => acc && acc[part]), obj);
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@internal
+ *
+ * \@example
+ * setValue(state, 'todos.ui', { filter: {} })
+ * @param {?} obj
+ * @param {?} prop
+ * @param {?} val
+ * @return {?}
+ */
+function setValue(obj, prop, val) {
+    /** @type {?} */
+    const split = prop.split('.');
+    if (split.length === 1) {
+        return Object.assign({}, obj, val);
+    }
+    obj = Object.assign({}, obj);
+    /** @type {?} */
+    const lastIndex = split.length - 2;
+    /** @type {?} */
+    const removeStoreName = prop.split('.').slice(1);
+    removeStoreName.reduce((/**
+     * @param {?} acc
+     * @param {?} part
+     * @param {?} index
+     * @return {?}
+     */
+    (acc, part, index) => {
+        if (index === lastIndex) {
+            if (isObject(acc[part])) {
+                acc[part] = Object.assign({}, acc[part], val);
+            }
+            else {
+                acc[part] = val;
+            }
+        }
+        else {
+            acc[part] = Object.assign({}, acc[part]);
+        }
+        return acc && acc[part];
+    }), obj);
+    return obj;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+let skipStorageUpdate = false;
+/** @type {?} */
+const _persistStateInit = new rxjs__WEBPACK_IMPORTED_MODULE_1__["ReplaySubject"](1);
+/**
+ * @return {?}
+ */
+function selectPersistStateInit() {
+    return _persistStateInit.asObservable();
+}
+/**
+ * @param {?} skip
+ * @return {?}
+ */
+function setSkipStorageUpdate(skip$$1) {
+    skipStorageUpdate = skip$$1;
+}
+/**
+ * @return {?}
+ */
+function getSkipStorageUpdate() {
+    return skipStorageUpdate;
+}
+/**
+ * @param {?} v
+ * @return {?}
+ */
+function isPromise(v) {
+    return v && isFunction(v.then);
+}
+/**
+ * @param {?} asyncOrValue
+ * @return {?}
+ */
+function observify(asyncOrValue) {
+    if (isPromise(asyncOrValue) || Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["isObservable"])(asyncOrValue)) {
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["from"])(asyncOrValue);
+    }
+    return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(asyncOrValue);
+}
+/**
+ * @param {?=} params
+ * @return {?}
+ */
+function persistState(params) {
+    /** @type {?} */
+    const defaults = {
+        key: 'AkitaStores',
+        enableInNonBrowser: false,
+        storage: !hasLocalStorage() ? params.storage : localStorage,
+        deserialize: JSON.parse,
+        serialize: JSON.stringify,
+        include: [],
+        /**
+         * @deprecated use include with a callback
+         */
+        exclude: [],
+        persistOnDestroy: false,
+        preStorageUpdate: (/**
+         * @param {?} storeName
+         * @param {?} state
+         * @return {?}
+         */
+        function (storeName, state) {
+            return state;
+        }),
+        preStoreUpdate: (/**
+         * @param {?} storeName
+         * @param {?} state
+         * @return {?}
+         */
+        function (storeName, state) {
+            return state;
+        }),
+        skipStorageUpdate: getSkipStorageUpdate,
+        preStorageUpdateOperator: (/**
+         * @return {?}
+         */
+        () => (/**
+         * @param {?} source
+         * @return {?}
+         */
+        source => source))
+    };
+    const { storage, enableInNonBrowser, deserialize, serialize, include, exclude, key, preStorageUpdate, persistOnDestroy, preStorageUpdateOperator, preStoreUpdate, skipStorageUpdate } = Object.assign({}, defaults, params);
+    if ((isNotBrowser && !enableInNonBrowser) || !storage)
+        return;
+    /** @type {?} */
+    const hasInclude = include.length > 0;
+    /** @type {?} */
+    const hasExclude = exclude.length > 0;
+    /** @type {?} */
+    let includeStores;
+    if (hasInclude && hasExclude) {
+        throw new AkitaError("You can't use both include and exclude");
+    }
+    if (hasInclude) {
+        includeStores = include.reduce((/**
+         * @param {?} acc
+         * @param {?} path
+         * @return {?}
+         */
+        (acc, path) => {
+            if (isFunction(path)) {
+                acc.fns.push(path);
+            }
+            else {
+                /** @type {?} */
+                const storeName = path.split('.')[0];
+                acc[storeName] = path;
+            }
+            return acc;
+        }), { fns: [] });
+    }
+    /** @type {?} */
+    let stores = {};
+    /** @type {?} */
+    let acc = {};
+    /** @type {?} */
+    let subscriptions = [];
+    /** @type {?} */
+    const buffer = [];
+    /**
+     * @param {?} v
+     * @return {?}
+     */
+    function _save(v) {
+        observify(v).subscribe((/**
+         * @return {?}
+         */
+        () => {
+            /** @type {?} */
+            const next = buffer.shift();
+            next && _save(next);
+        }));
+    }
+    // when we use the local/session storage we perform the serialize, otherwise we let the passed storage implementation to do it
+    /** @type {?} */
+    const isLocalStorage = (hasLocalStorage() && storage === localStorage) || (hasSessionStorage() && storage === sessionStorage);
+    observify(storage.getItem(key)).subscribe((/**
+     * @param {?} value
+     * @return {?}
+     */
+    (value) => {
+        /** @type {?} */
+        let storageState = isObject(value) ? value : deserialize(value || '{}');
+        /**
+         * @param {?} storeCache
+         * @return {?}
+         */
+        function save(storeCache) {
+            storageState['$cache'] = Object.assign({}, (storageState['$cache'] || {}), storeCache);
+            storageState = Object.assign({}, storageState, acc);
+            buffer.push(storage.setItem(key, isLocalStorage ? serialize(storageState) : storageState));
+            _save(buffer.shift());
+        }
+        /**
+         * @param {?} storeName
+         * @param {?} path
+         * @return {?}
+         */
+        function subscribe(storeName, path) {
+            stores[storeName] = __stores__[storeName]
+                ._select((/**
+             * @param {?} state
+             * @return {?}
+             */
+            state => getValue(state, path)))
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["skip"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["filter"])((/**
+             * @return {?}
+             */
+            () => skipStorageUpdate() === false)), preStorageUpdateOperator())
+                .subscribe((/**
+             * @param {?} data
+             * @return {?}
+             */
+            data => {
+                acc[storeName] = preStorageUpdate(storeName, data);
+                Promise.resolve().then((/**
+                 * @return {?}
+                 */
+                () => save({ [storeName]: __stores__[storeName]._cache().getValue() })));
+            }));
+        }
+        /**
+         * @param {?} storeName
+         * @param {?} store
+         * @param {?} path
+         * @return {?}
+         */
+        function setInitial(storeName, store, path) {
+            if (storeName in storageState) {
+                setAction('@PersistState');
+                store._setState((/**
+                 * @param {?} state
+                 * @return {?}
+                 */
+                state => {
+                    return setValue(state, path, preStoreUpdate(storeName, storageState[storeName]));
+                }));
+                /** @type {?} */
+                const hasCache = storageState['$cache'] ? storageState['$cache'][storeName] : false;
+                __stores__[storeName].setHasCache(hasCache, { restartTTL: true });
+            }
+        }
+        subscriptions.push($$deleteStore.subscribe((/**
+         * @param {?} storeName
+         * @return {?}
+         */
+        storeName => {
+            if (stores[storeName]) {
+                if (persistOnDestroy === false) {
+                    save({ [storeName]: false });
+                }
+                stores[storeName].unsubscribe();
+                delete stores[storeName];
+            }
+        })));
+        subscriptions.push($$addStore.subscribe((/**
+         * @param {?} storeName
+         * @return {?}
+         */
+        storeName => {
+            if (storeName === 'router' || (hasExclude && exclude.includes(storeName))) {
+                return;
+            }
+            /** @type {?} */
+            const store = __stores__[storeName];
+            if (hasInclude) {
+                /** @type {?} */
+                let path = includeStores[storeName];
+                if (!path) {
+                    /** @type {?} */
+                    const passPredicate = includeStores.fns.some((/**
+                     * @param {?} fn
+                     * @return {?}
+                     */
+                    fn => fn(storeName)));
+                    if (passPredicate) {
+                        path = storeName;
+                    }
+                    else {
+                        return;
+                    }
+                }
+                setInitial(storeName, store, path);
+                subscribe(storeName, path);
+            }
+            else {
+                setInitial(storeName, store, storeName);
+                subscribe(storeName, storeName);
+            }
+        })));
+        _persistStateInit.next();
+    }));
+    return {
+        /**
+         * @return {?}
+         */
+        destroy() {
+            subscriptions.forEach((/**
+             * @param {?} s
+             * @return {?}
+             */
+            s => s.unsubscribe()));
+            for (let i = 0, keys = Object.keys(stores); i < keys.length; i++) {
+                /** @type {?} */
+                const storeName = keys[i];
+                stores[storeName].unsubscribe();
+            }
+            stores = {};
+        },
+        /**
+         * @return {?}
+         */
+        clear() {
+            storage.clear();
+        },
+        /**
+         * @param {?=} storeName
+         * @return {?}
+         */
+        clearStore(storeName) {
+            if (isNil(storeName)) {
+                /** @type {?} */
+                const value = observify(storage.setItem(key, '{}'));
+                value.subscribe();
+                return;
+            }
+            /** @type {?} */
+            const value = storage.getItem(key);
+            observify(value).subscribe((/**
+             * @param {?} v
+             * @return {?}
+             */
+            v => {
+                /** @type {?} */
+                const storageState = deserialize(v || '{}');
+                if (storageState[storeName]) {
+                    delete storageState[storeName];
+                    /** @type {?} */
+                    const value = observify(storage.setItem(key, serialize(storageState)));
+                    value.subscribe();
+                }
+            }));
+        }
+    };
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+class SnapshotManager {
+    /**
+     * Get a snapshot of the whole state or a specific stores
+     * Use it ONLY for things such as saving the state in the server
+     * @param {?=} stores
+     * @return {?}
+     */
+    getStoresSnapshot(stores = []) {
+        /** @type {?} */
+        let acc = {};
+        /** @type {?} */
+        const hasInclude = stores.length > 0;
+        /** @type {?} */
+        const keys = hasInclude ? stores : Object.keys(__stores__);
+        for (let i = 0; i < keys.length; i++) {
+            /** @type {?} */
+            let storeName = keys[i];
+            if (storeName !== 'router') {
+                acc[storeName] = __stores__[storeName]._value();
+            }
+        }
+        return acc;
+    }
+    /**
+     * @param {?} stores
+     * @param {?=} options
+     * @return {?}
+     */
+    setStoresSnapshot(stores, options) {
+        /** @type {?} */
+        const mergedOptions = Object.assign({ skipStorageUpdate: false, lazy: false }, options);
+        mergedOptions.skipStorageUpdate && setSkipStorageUpdate(true);
+        /** @type {?} */
+        let normalizedStores = stores;
+        if (isString(stores)) {
+            normalizedStores = JSON.parse((/** @type {?} */ (normalizedStores)));
+        }
+        /** @type {?} */
+        const size = Object.keys(normalizedStores).length;
+        if (mergedOptions.lazy) {
+            $$addStore
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["filter"])((/**
+             * @param {?} name
+             * @return {?}
+             */
+            name => normalizedStores.hasOwnProperty(name))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["take"])(size))
+                .subscribe((/**
+             * @param {?} name
+             * @return {?}
+             */
+            name => __stores__[name]._setState((/**
+             * @return {?}
+             */
+            () => normalizedStores[name]))));
+        }
+        else {
+            for (let i = 0, keys = Object.keys(normalizedStores); i < keys.length; i++) {
+                /** @type {?} */
+                const storeName = keys[i];
+                if (__stores__[storeName]) {
+                    __stores__[storeName]._setState((/**
+                     * @return {?}
+                     */
+                    () => normalizedStores[storeName]));
+                }
+            }
+        }
+        mergedOptions.skipStorageUpdate && setSkipStorageUpdate(false);
+    }
+}
+/** @type {?} */
+const snapshotManager = new SnapshotManager();
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @abstract
+ * @template State
+ */
+class AkitaPlugin {
+    /**
+     * @protected
+     * @param {?} query
+     * @param {?=} config
+     */
+    constructor(query, config) {
+        this.query = query;
+        if (config && config.resetFn) {
+            if (getAkitaConfig().resettable) {
+                this.onReset(config.resetFn);
+            }
+        }
+    }
+    /**
+     * This method is responsible for getting access to the query.
+     * @protected
+     * @return {?}
+     */
+    getQuery() {
+        return this.query;
+    }
+    /**
+     * This method is responsible for getting access to the store.
+     * @protected
+     * @return {?}
+     */
+    getStore() {
+        return this.getQuery().__store__;
+    }
+    /**
+     * This method is responsible tells whether the plugin is entityBased or not.
+     * @protected
+     * @param {?} entityId
+     * @return {?}
+     */
+    isEntityBased(entityId) {
+        return toBoolean(entityId);
+    }
+    /**
+     * This method is responsible for selecting the source; it can be the whole store or one entity.
+     * @protected
+     * @param {?} entityId
+     * @param {?=} property
+     * @return {?}
+     */
+    selectSource(entityId, property) {
+        if (this.isEntityBased(entityId)) {
+            return ((/** @type {?} */ (this.getQuery()))).selectEntity(entityId).pipe(filterNil);
+        }
+        if (property) {
+            return this.getQuery().select((/**
+             * @param {?} state
+             * @return {?}
+             */
+            state => getValue(state, this.withStoreName(property))));
+        }
+        return this.getQuery().select();
+    }
+    /**
+     * @protected
+     * @param {?} entityId
+     * @param {?=} property
+     * @return {?}
+     */
+    getSource(entityId, property) {
+        if (this.isEntityBased(entityId)) {
+            return ((/** @type {?} */ (this.getQuery()))).getEntity(entityId);
+        }
+        /** @type {?} */
+        const state = this.getQuery().getValue();
+        if (property) {
+            return getValue(state, this.withStoreName(property));
+        }
+        return state;
+    }
+    /**
+     * @protected
+     * @param {?} prop
+     * @return {?}
+     */
+    withStoreName(prop) {
+        return `${this.storeName}.${prop}`;
+    }
+    /**
+     * @protected
+     * @return {?}
+     */
+    get storeName() {
+        return this.getStore().storeName;
+    }
+    /**
+     * This method is responsible for updating the store or one entity; it can be the whole store or one entity.
+     * @protected
+     * @param {?} newState
+     * @param {?=} entityId
+     * @param {?=} property
+     * @return {?}
+     */
+    updateStore(newState, entityId, property) {
+        if (this.isEntityBased(entityId)) {
+            this.getStore().update(entityId, newState);
+        }
+        else {
+            if (property) {
+                this.getStore()._setState((/**
+                 * @param {?} state
+                 * @return {?}
+                 */
+                state => {
+                    return setValue(state, this.withStoreName(property), newState);
+                }));
+                return;
+            }
+            this.getStore()._setState((/**
+             * @param {?} state
+             * @return {?}
+             */
+            state => (Object.assign({}, state, newState))));
+        }
+    }
+    /**
+     * Function to invoke upon reset
+     * @private
+     * @param {?} fn
+     * @return {?}
+     */
+    onReset(fn) {
+        /** @type {?} */
+        const original = this.getStore().reset;
+        this.getStore().reset = (/**
+         * @param {...?} params
+         * @return {?}
+         */
+        (...params) => {
+            /** It should run after the plugin destroy method */
+            setTimeout((/**
+             * @return {?}
+             */
+            () => {
+                original.apply(this.getStore(), params);
+                fn();
+            }));
+        });
+    }
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+const paginatorDefaults = {
+    pagesControls: false,
+    range: false,
+    startWith: 1,
+    cacheTimeout: undefined,
+    clearStoreWithCache: true
+};
+/**
+ * @template State
+ */
+class PaginatorPlugin extends AkitaPlugin {
+    /**
+     * @param {?} query
+     * @param {?=} config
+     */
+    constructor(query, config = {}) {
+        super(query, {
+            resetFn: (/**
+             * @return {?}
+             */
+            () => {
+                this.initial = false;
+                this.destroy({ clearCache: true, currentPage: 1 });
+            })
+        });
+        this.query = query;
+        this.config = config;
+        /**
+         * Save current filters, sorting, etc. in cache
+         */
+        this.metadata = new Map();
+        this.pages = new Map();
+        this.pagination = {
+            currentPage: 1,
+            perPage: 0,
+            total: 0,
+            lastPage: 0,
+            data: []
+        };
+        /**
+         * When the user navigates to a different page and return
+         * we don't want to call `clearCache` on first time.
+         */
+        this.initial = true;
+        /**
+         * Proxy to the query loading
+         */
+        this.isLoading$ = this.query.selectLoading().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["delay"])(0));
+        this.config = Object.assign(paginatorDefaults, config);
+        const { startWith, cacheTimeout } = this.config;
+        this.page = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](startWith);
+        if (Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["isObservable"])(cacheTimeout)) {
+            this.clearCacheSubscription = cacheTimeout.subscribe((/**
+             * @return {?}
+             */
+            () => this.clearCache()));
+        }
+    }
+    /**
+     * Listen to page changes
+     * @return {?}
+     */
+    get pageChanges() {
+        return this.page.asObservable();
+    }
+    /**
+     * Get the current page number
+     * @return {?}
+     */
+    get currentPage() {
+        return this.pagination.currentPage;
+    }
+    /**
+     * Check if current page is the first one
+     * @return {?}
+     */
+    get isFirst() {
+        return this.currentPage === 1;
+    }
+    /**
+     * Check if current page is the last one
+     * @return {?}
+     */
+    get isLast() {
+        return this.currentPage === this.pagination.lastPage;
+    }
+    /**
+     * Whether to generate an array of pages for *ngFor
+     * [1, 2, 3, 4]
+     * @template THIS
+     * @this {THIS}
+     * @return {THIS}
+     */
+    withControls() {
+        (/** @type {?} */ (this)).config.pagesControls = true;
+        return (/** @type {?} */ (this));
+    }
+    /**
+     * Whether to generate the `from` and `to` keys
+     * [1, 2, 3, 4]
+     * @template THIS
+     * @this {THIS}
+     * @return {THIS}
+     */
+    withRange() {
+        (/** @type {?} */ (this)).config.range = true;
+        return (/** @type {?} */ (this));
+    }
+    /**
+     * Set the loading state
+     * @param {?=} value
+     * @return {?}
+     */
+    setLoading(value = true) {
+        this.getStore().setLoading(value);
+    }
+    /**
+     * Update the pagination object and add the page
+     * @param {?} response
+     * @return {?}
+     */
+    update(response) {
+        this.pagination = response;
+        this.addPage(response.data);
+    }
+    /**
+     *
+     * Set the ids and add the page to store
+     * @param {?} data
+     * @return {?}
+     */
+    addPage(data) {
+        this.pages.set(this.currentPage, { ids: data.map((/**
+             * @param {?} entity
+             * @return {?}
+             */
+            entity => entity[this.getStore().idKey])) });
+        this.getStore().add(data);
+    }
+    /**
+     * Clear the cache.
+     * @param {?=} options
+     * @return {?}
+     */
+    clearCache(options = {}) {
+        if (!this.initial) {
+            logAction('@Pagination - Clear Cache');
+            if (options.clearStore !== false && (this.config.clearStoreWithCache || options.clearStore)) {
+                this.getStore().remove();
+            }
+            this.pages = new Map();
+            this.metadata = new Map();
+        }
+        this.initial = false;
+    }
+    /**
+     * @param {?} page
+     * @return {?}
+     */
+    clearPage(page) {
+        this.pages.delete(page);
+    }
+    /**
+     * Clear the cache timeout and optionally the pages
+     * @param {?=} __0
+     * @return {?}
+     */
+    destroy({ clearCache, currentPage } = {}) {
+        if (this.clearCacheSubscription) {
+            this.clearCacheSubscription.unsubscribe();
+        }
+        if (clearCache) {
+            this.clearCache();
+        }
+        if (!isUndefined(currentPage)) {
+            this.setPage(currentPage);
+        }
+        this.initial = true;
+    }
+    /**
+     * Whether the provided page is active
+     * @param {?} page
+     * @return {?}
+     */
+    isPageActive(page) {
+        return this.currentPage === page;
+    }
+    /**
+     * Set the current page
+     * @param {?} page
+     * @return {?}
+     */
+    setPage(page) {
+        if (page !== this.currentPage || !this.hasPage(page)) {
+            this.page.next((this.pagination.currentPage = page));
+        }
+    }
+    /**
+     * Increment current page
+     * @return {?}
+     */
+    nextPage() {
+        if (this.currentPage !== this.pagination.lastPage) {
+            this.setPage(this.pagination.currentPage + 1);
+        }
+    }
+    /**
+     * Decrement current page
+     * @return {?}
+     */
+    prevPage() {
+        if (this.pagination.currentPage > 1) {
+            this.setPage(this.pagination.currentPage - 1);
+        }
+    }
+    /**
+     * Set current page to last
+     * @return {?}
+     */
+    setLastPage() {
+        this.setPage(this.pagination.lastPage);
+    }
+    /**
+     * Set current page to first
+     * @return {?}
+     */
+    setFirstPage() {
+        this.setPage(1);
+    }
+    /**
+     * Check if page exists in cache
+     * @param {?} page
+     * @return {?}
+     */
+    hasPage(page) {
+        return this.pages.has(page);
+    }
+    /**
+     * Get the current page if it's in cache, otherwise invoke the request
+     * @param {?} req
+     * @return {?}
+     */
+    getPage(req) {
+        /** @type {?} */
+        let page = this.pagination.currentPage;
+        if (this.hasPage(page)) {
+            return this.selectPage(page);
+        }
+        else {
+            this.setLoading(true);
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["from"])(req()).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["switchMap"])((/**
+             * @param {?} config
+             * @return {?}
+             */
+            (config) => {
+                page = config.currentPage;
+                applyTransaction((/**
+                 * @return {?}
+                 */
+                () => {
+                    this.setLoading(false);
+                    this.update(config);
+                }));
+                return this.selectPage(page);
+            })));
+        }
+    }
+    /**
+     * @return {?}
+     */
+    getQuery() {
+        return this.query;
+    }
+    /**
+     * @return {?}
+     */
+    refreshCurrentPage() {
+        if (isNil(this.currentPage) === false) {
+            this.clearPage(this.currentPage);
+            this.setPage(this.currentPage);
+        }
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    getFrom() {
+        if (this.isFirst) {
+            return 1;
+        }
+        return (this.currentPage - 1) * this.pagination.perPage + 1;
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    getTo() {
+        if (this.isLast) {
+            return this.pagination.total;
+        }
+        return this.currentPage * this.pagination.perPage;
+    }
+    /**
+     * Select the page
+     * @private
+     * @param {?} page
+     * @return {?}
+     */
+    selectPage(page) {
+        return this.query.selectAll({ asObject: true }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["take"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])((/**
+         * @param {?} entities
+         * @return {?}
+         */
+        entities => {
+            /** @type {?} */
+            let response = Object.assign({}, this.pagination, { data: this.pages.get(page).ids.map((/**
+                 * @param {?} id
+                 * @return {?}
+                 */
+                id => entities[id])) });
+            const { range, pagesControls } = this.config;
+            /** If no total - calc it */
+            if (isNaN(this.pagination.total)) {
+                if (response.lastPage === 1) {
+                    response.total = response.data ? response.data.length : 0;
+                }
+                else {
+                    response.total = response.perPage * response.lastPage;
+                }
+                this.pagination.total = response.total;
+            }
+            if (range) {
+                response.from = this.getFrom();
+                response.to = this.getTo();
+            }
+            if (pagesControls) {
+                response.pageControls = generatePages(this.pagination.total, this.pagination.perPage);
+            }
+            return response;
+        })));
+    }
+}
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    action('@Pagination - New Page'),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Function),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [Object]),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", void 0)
+], PaginatorPlugin.prototype, "update", null);
+
+/**
+ * Generate an array so we can ngFor them to navigate between pages
+ * @param {?} total
+ * @param {?} perPage
+ * @return {?}
+ */
+function generatePages(total, perPage) {
+    /** @type {?} */
+    const len = Math.ceil(total / perPage);
+    /** @type {?} */
+    let arr = [];
+    for (let i = 0; i < len; i++) {
+        arr.push(i + 1);
+    }
+    return arr;
+}
+/**
+ * backward compatibility
+ * @type {?}
+ */
+const Paginator = PaginatorPlugin;
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// Todo: Return  AbstractControl interface
+/**
+ * @template T
+ */
+class PersistNgFormPlugin extends AkitaPlugin {
+    /**
+     * @param {?} query
+     * @param {?=} factoryFnOrPath
+     * @param {?=} params
+     */
+    constructor(query, factoryFnOrPath, params = {}) {
+        super(query);
+        this.query = query;
+        this.factoryFnOrPath = factoryFnOrPath;
+        this.params = params;
+        this.params = Object.assign({ debounceTime: 300, formKey: 'akitaForm', emitEvent: false, arrControlFactory: (/**
+             * @param {?} v
+             * @return {?}
+             */
+            v => this.builder.control(v)) }, params);
+        this.isRootKeys = toBoolean(factoryFnOrPath) === false;
+        this.isKeyBased = isString(factoryFnOrPath) || this.isRootKeys;
+    }
+    /**
+     * @template THIS
+     * @this {THIS}
+     * @param {?} form
+     * @param {?=} builder
+     * @return {THIS}
+     */
+    setForm(form, builder) {
+        (/** @type {?} */ (this)).form = form;
+        (/** @type {?} */ (this)).builder = builder;
+        (/** @type {?} */ (this)).activate();
+        return (/** @type {?} */ (this));
+    }
+    /**
+     * @param {?=} initialState
+     * @return {?}
+     */
+    reset(initialState) {
+        /** @type {?} */
+        let value;
+        if (initialState) {
+            value = initialState;
+        }
+        else {
+            value = this.isKeyBased ? this.initialValue : ((/** @type {?} */ (this))).factoryFnOrPath();
+        }
+        if (this.isKeyBased) {
+            Object.keys(this.initialValue).forEach((/**
+             * @param {?} stateKey
+             * @return {?}
+             */
+            stateKey => {
+                /** @type {?} */
+                const value = this.initialValue[stateKey];
+                if (Array.isArray(value) && this.builder) {
+                    /** @type {?} */
+                    const formArray = this.form.controls[stateKey];
+                    this.cleanArray(formArray);
+                    value.forEach((/**
+                     * @param {?} v
+                     * @param {?} i
+                     * @return {?}
+                     */
+                    (v, i) => {
+                        this.form.get(stateKey).insert(i, ((/** @type {?} */ (this.params.arrControlFactory)))(v));
+                    }));
+                }
+            }));
+        }
+        this.form.patchValue(value, { emitEvent: this.params.emitEvent });
+        /** @type {?} */
+        const storeValue = this.isKeyBased ? setValue(this.getQuery().getValue(), `${this.getStore().storeName}.${this.factoryFnOrPath}`, value) : { [this.params.formKey]: value };
+        this.updateStore(storeValue);
+    }
+    /**
+     * @private
+     * @param {?} control
+     * @return {?}
+     */
+    cleanArray(control) {
+        while (control.length !== 0) {
+            control.removeAt(0);
+        }
+    }
+    /**
+     * @private
+     * @param {?} formValue
+     * @param {?} root
+     * @return {?}
+     */
+    resolveInitialValue(formValue, root) {
+        if (!formValue)
+            return;
+        return Object.keys(formValue).reduce((/**
+         * @param {?} acc
+         * @param {?} stateKey
+         * @return {?}
+         */
+        (acc, stateKey) => {
+            /** @type {?} */
+            const value = root[stateKey];
+            if (Array.isArray(value) && this.builder) {
+                /** @type {?} */
+                const factory = this.params.arrControlFactory;
+                this.cleanArray(this.form.get(stateKey));
+                value.forEach((/**
+                 * @param {?} v
+                 * @param {?} i
+                 * @return {?}
+                 */
+                (v, i) => {
+                    this.form.get(stateKey).insert(i, ((/** @type {?} */ (factory)))(v));
+                }));
+            }
+            acc[stateKey] = root[stateKey];
+            return acc;
+        }), {});
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    activate() {
+        /** @type {?} */
+        let path;
+        if (this.isKeyBased) {
+            if (this.isRootKeys) {
+                this.initialValue = this.resolveInitialValue(this.form.value, this.getQuery().getValue());
+                this.form.patchValue(this.initialValue, { emitEvent: this.params.emitEvent });
+            }
+            else {
+                path = `${this.getStore().storeName}.${this.factoryFnOrPath}`;
+                /** @type {?} */
+                const root = getValue(this.getQuery().getValue(), path);
+                this.initialValue = this.resolveInitialValue(root, root);
+                this.form.patchValue(this.initialValue, { emitEvent: this.params.emitEvent });
+            }
+        }
+        else {
+            if (!((/** @type {?} */ (this.getQuery().getValue())))[this.params.formKey]) {
+                logAction('@PersistNgFormPlugin activate');
+                this.updateStore({ [this.params.formKey]: ((/** @type {?} */ (this))).factoryFnOrPath() });
+            }
+            /** @type {?} */
+            const value = this.getQuery().getValue()[this.params.formKey];
+            this.form.patchValue(value);
+        }
+        this.formChanges = this.form.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["debounceTime"])(this.params.debounceTime)).subscribe((/**
+         * @param {?} value
+         * @return {?}
+         */
+        value => {
+            logAction('@PersistForm - Update');
+            /** @type {?} */
+            let newState;
+            if (this.isKeyBased) {
+                if (this.isRootKeys) {
+                    newState = (/**
+                     * @param {?} state
+                     * @return {?}
+                     */
+                    state => (Object.assign({}, state, value)));
+                }
+                else {
+                    newState = (/**
+                     * @param {?} state
+                     * @return {?}
+                     */
+                    state => setValue(state, path, value));
+                }
+            }
+            else {
+                newState = (/**
+                 * @return {?}
+                 */
+                () => ({ [this.params.formKey]: value }));
+            }
+            this.updateStore(newState(this.getQuery().getValue()));
+        }));
+    }
+    /**
+     * @return {?}
+     */
+    destroy() {
+        this.formChanges && this.formChanges.unsubscribe();
+        this.form = null;
+        this.builder = null;
+    }
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @param {?} value
+ * @return {?}
+ */
+function capitalize(value) {
+    return value && value.charAt(0).toUpperCase() + value.slice(1);
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+let subs = [];
+/**
+ * @param {?=} ngZoneOrOptions
+ * @param {?=} options
+ * @return {?}
+ */
+function akitaDevtools(ngZoneOrOptions, options = {}) {
+    if (isNotBrowser)
+        return;
+    if (!((/** @type {?} */ (window))).__REDUX_DEVTOOLS_EXTENSION__) {
+        return;
+    }
+    subs.length &&
+        subs.forEach((/**
+         * @param {?} s
+         * @return {?}
+         */
+        s => {
+            if (s.unsubscribe) {
+                s.unsubscribe();
+            }
+            else {
+                s && s();
+            }
+        }));
+    /** @type {?} */
+    const isAngular = ngZoneOrOptions && ngZoneOrOptions['run'];
+    if (!isAngular) {
+        ngZoneOrOptions = ngZoneOrOptions || {};
+        ((/** @type {?} */ (ngZoneOrOptions))).run = (/**
+         * @param {?} cb
+         * @return {?}
+         */
+        cb => cb());
+        options = (/** @type {?} */ (ngZoneOrOptions));
+    }
+    /** @type {?} */
+    const defaultOptions = { name: 'Akita', shallow: true, storesWhitelist: [] };
+    /** @type {?} */
+    const merged = Object.assign({}, defaultOptions, options);
+    /** @type {?} */
+    const storesWhitelist = merged.storesWhitelist;
+    /** @type {?} */
+    const devTools = ((/** @type {?} */ (window))).__REDUX_DEVTOOLS_EXTENSION__.connect(merged);
+    /** @type {?} */
+    let appState = {};
+    /** @type {?} */
+    const isAllowed = (/**
+     * @param {?} storeName
+     * @return {?}
+     */
+    storeName => {
+        if (!storesWhitelist.length) {
+            return true;
+        }
+        return storesWhitelist.indexOf(storeName) > -1;
+    });
+    subs.push($$addStore.subscribe((/**
+     * @param {?} storeName
+     * @return {?}
+     */
+    storeName => {
+        if (isAllowed(storeName) === false)
+            return;
+        appState = Object.assign({}, appState, { [storeName]: __stores__[storeName]._value() });
+        devTools.send({ type: `[${capitalize(storeName)}] - @@INIT` }, appState);
+    })));
+    subs.push($$deleteStore.subscribe((/**
+     * @param {?} storeName
+     * @return {?}
+     */
+    storeName => {
+        if (isAllowed(storeName) === false)
+            return;
+        delete appState[storeName];
+        devTools.send({ type: `[${storeName}] - Delete Store` }, appState);
+    })));
+    subs.push($$updateStore.subscribe((/**
+     * @param {?} storeName
+     * @return {?}
+     */
+    storeName => {
+        if (isAllowed(storeName) === false)
+            return;
+        const { type, entityIds, skip: skip$$1 } = currentAction;
+        if (skip$$1) {
+            setSkipAction(false);
+            return;
+        }
+        /** @type {?} */
+        const store = __stores__[storeName];
+        if (!store) {
+            return;
+        }
+        if (options.shallow === false && appState[storeName]) {
+            /** @type {?} */
+            const isEqual = JSON.stringify(store._value()) === JSON.stringify(appState[storeName]);
+            if (isEqual)
+                return;
+        }
+        appState = Object.assign({}, appState, { [storeName]: store._value() });
+        /** @type {?} */
+        const normalize = capitalize(storeName);
+        /** @type {?} */
+        let msg = isDefined(entityIds) ? `[${normalize}] - ${type} (ids: ${entityIds})` : `[${normalize}] - ${type}`;
+        if (options.logTrace) {
+            console.group(msg);
+            console.trace();
+            console.groupEnd();
+        }
+        if (options.sortAlphabetically) {
+            /** @type {?} */
+            const sortedAppState = Object.keys(appState)
+                .sort()
+                .reduce((/**
+             * @param {?} acc
+             * @param {?} storeName
+             * @return {?}
+             */
+            (acc, storeName) => {
+                acc[storeName] = appState[storeName];
+                return acc;
+            }), {});
+            devTools.send({ type: msg }, sortedAppState);
+            return;
+        }
+        devTools.send({ type: msg }, appState);
+    })));
+    subs.push(devTools.subscribe((/**
+     * @param {?} message
+     * @return {?}
+     */
+    message => {
+        if (message.type === 'DISPATCH') {
+            /** @type {?} */
+            const payloadType = message.payload.type;
+            if (payloadType === 'COMMIT') {
+                devTools.init(appState);
+                return;
+            }
+            if (message.state) {
+                /** @type {?} */
+                const rootState = JSON.parse(message.state);
+                for (let i = 0, keys = Object.keys(rootState); i < keys.length; i++) {
+                    /** @type {?} */
+                    const storeName = keys[i];
+                    if (__stores__[storeName]) {
+                        ((/** @type {?} */ (ngZoneOrOptions))).run((/**
+                         * @return {?}
+                         */
+                        () => {
+                            __stores__[storeName]._setState((/**
+                             * @return {?}
+                             */
+                            () => rootState[storeName]), false);
+                        }));
+                    }
+                }
+            }
+        }
+    })));
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Each plugin that wants to add support for entities should extend this interface.
+ * @abstract
+ * @template State, P
+ */
+class EntityCollectionPlugin {
+    /**
+     * @protected
+     * @param {?} query
+     * @param {?} entityIds
+     */
+    constructor(query, entityIds) {
+        this.query = query;
+        this.entityIds = entityIds;
+        this.entities = new Map();
+    }
+    /**
+     * Get the entity plugin instance.
+     * @protected
+     * @param {?} id
+     * @return {?}
+     */
+    getEntity(id) {
+        return this.entities.get(id);
+    }
+    /**
+     * Whether the entity plugin exist.
+     * @protected
+     * @param {?} id
+     * @return {?}
+     */
+    hasEntity(id) {
+        return this.entities.has(id);
+    }
+    /**
+     * Remove the entity plugin instance.
+     * @protected
+     * @param {?} id
+     * @return {?}
+     */
+    removeEntity(id) {
+        this.destroy(id);
+        return this.entities.delete(id);
+    }
+    /**
+     * Set the entity plugin instance.
+     * @protected
+     * @param {?} id
+     * @param {?} plugin
+     * @return {?}
+     */
+    createEntity(id, plugin) {
+        return this.entities.set(id, plugin);
+    }
+    /**
+     * If the user passes `entityIds` we take them; otherwise, we take all.
+     * @protected
+     * @return {?}
+     */
+    getIds() {
+        return isUndefined(this.entityIds) ? this.query.getValue().ids : coerceArray(this.entityIds);
+    }
+    /**
+     * When you call one of the plugin methods, you can pass id/ids or undefined which means all.
+     * @protected
+     * @param {?=} ids
+     * @return {?}
+     */
+    resolvedIds(ids) {
+        return isUndefined(ids) ? this.getIds() : coerceArray(ids);
+    }
+    /**
+     * Call this method when you want to activate the plugin on init or when you need to listen to add/remove of entities dynamically.
+     *
+     * For example in your plugin you may do the following:
+     *
+     * this.query.select(state => state.ids).pipe(skip(1)).subscribe(ids => this.activate(ids));
+     * @protected
+     * @param {?} ids
+     * @param {?=} actions
+     * @return {?}
+     */
+    rebase(ids, actions = {}) {
+        /**
+         *
+         * If the user passes `entityIds` & we have new ids check if we need to add/remove instances.
+         *
+         * This phase will be called only upon update.
+         */
+        if (toBoolean(ids)) {
+            /**
+             * Which means all
+             */
+            if (isUndefined(this.entityIds)) {
+                for (let i = 0, len = ids.length; i < len; i++) {
+                    /** @type {?} */
+                    const entityId = ids[i];
+                    if (this.hasEntity(entityId) === false) {
+                        isFunction(actions.beforeAdd) && actions.beforeAdd(entityId);
+                        /** @type {?} */
+                        const plugin = this.instantiatePlugin(entityId);
+                        this.entities.set(entityId, plugin);
+                        isFunction(actions.afterAdd) && actions.afterAdd(plugin);
+                    }
+                }
+                this.entities.forEach((/**
+                 * @param {?} plugin
+                 * @param {?} entityId
+                 * @return {?}
+                 */
+                (plugin, entityId) => {
+                    if (ids.indexOf(entityId) === -1) {
+                        isFunction(actions.beforeRemove) && actions.beforeRemove(plugin);
+                        this.removeEntity(entityId);
+                    }
+                }));
+            }
+            else {
+                /**
+                 * Which means the user passes specific ids
+                 * @type {?}
+                 */
+                const _ids = coerceArray(this.entityIds);
+                for (let i = 0, len = _ids.length; i < len; i++) {
+                    /** @type {?} */
+                    const entityId = _ids[i];
+                    /** The Entity in current ids and doesn't exist, add it. */
+                    if (ids.indexOf(entityId) > -1 && this.hasEntity(entityId) === false) {
+                        isFunction(actions.beforeAdd) && actions.beforeAdd(entityId);
+                        /** @type {?} */
+                        const plugin = this.instantiatePlugin(entityId);
+                        this.entities.set(entityId, plugin);
+                        isFunction(actions.afterAdd) && actions.afterAdd(plugin);
+                    }
+                    else {
+                        this.entities.forEach((/**
+                         * @param {?} plugin
+                         * @param {?} entityId
+                         * @return {?}
+                         */
+                        (plugin, entityId) => {
+                            /** The Entity not in current ids and exists, remove it. */
+                            if (ids.indexOf(entityId) === -1 && this.hasEntity(entityId) === true) {
+                                isFunction(actions.beforeRemove) && actions.beforeRemove(plugin);
+                                this.removeEntity(entityId);
+                            }
+                        }));
+                    }
+                }
+            }
+        }
+        else {
+            /**
+             * Otherwise, start with the provided ids or all.
+             */
+            this.getIds().forEach((/**
+             * @param {?} id
+             * @return {?}
+             */
+            id => {
+                if (!this.hasEntity(id))
+                    this.createEntity(id, this.instantiatePlugin(id));
+            }));
+        }
+    }
+    /**
+     * Listen for add/remove entities.
+     * @protected
+     * @return {?}
+     */
+    selectIds() {
+        return this.query.select((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => state.ids));
+    }
+    /**
+     * Base method for activation, you can override it if you need to.
+     * @protected
+     * @param {?=} ids
+     * @return {?}
+     */
+    activate(ids) {
+        this.rebase(ids);
+    }
+    /**
+     * Loop over each id and invoke the plugin method.
+     * @protected
+     * @param {?} ids
+     * @param {?} cb
+     * @return {?}
+     */
+    forEachId(ids, cb) {
+        /** @type {?} */
+        const _ids = this.resolvedIds(ids);
+        for (let i = 0, len = _ids.length; i < len; i++) {
+            /** @type {?} */
+            const id = _ids[i];
+            if (this.hasEntity(id)) {
+                cb(this.getEntity(id));
+            }
+        }
+    }
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @template State
+ */
+class StateHistoryPlugin extends AkitaPlugin {
+    /**
+     * @param {?} query
+     * @param {?=} params
+     * @param {?=} _entityId
+     */
+    constructor(query, params = {}, _entityId) {
+        super(query, {
+            resetFn: (/**
+             * @return {?}
+             */
+            () => this.clear())
+        });
+        this.query = query;
+        this.params = params;
+        this._entityId = _entityId;
+        /**
+         * Allow skipping an update from outside
+         */
+        this.skip = false;
+        this.history = {
+            past: [],
+            present: null,
+            future: []
+        };
+        /**
+         * Skip the update when redo/undo
+         */
+        this.skipUpdate = false;
+        params.maxAge = !!params.maxAge ? params.maxAge : 10;
+        params.comparator = params.comparator || ((/**
+         * @return {?}
+         */
+        () => true));
+        this.activate();
+    }
+    /**
+     * Observable stream representing whether the history plugin has an available past
+     *
+     * @return {?}
+     */
+    get hasPast$() {
+        return this._hasPast$;
+    }
+    /**
+     * Observable stream representing whether the history plugin has an available future
+     *
+     * @return {?}
+     */
+    get hasFuture$() {
+        return this._hasFuture$;
+    }
+    /**
+     * @return {?}
+     */
+    get hasPast() {
+        return this.history.past.length > 0;
+    }
+    /**
+     * @return {?}
+     */
+    get hasFuture() {
+        return this.history.future.length > 0;
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    get property() {
+        return this.params.watchProperty;
+    }
+    /* Updates the hasPast$ hasFuture$ observables*/
+    /**
+     * @private
+     * @return {?}
+     */
+    updateHasHistory() {
+        this.hasFutureSubject.next(this.hasFuture);
+        this.hasPastSubject.next(this.hasPast);
+    }
+    /**
+     * @return {?}
+     */
+    activate() {
+        this.hasPastSubject = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](false);
+        this._hasPast$ = this.hasPastSubject.asObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["distinctUntilChanged"])());
+        this.hasFutureSubject = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](false);
+        this._hasFuture$ = this.hasFutureSubject.asObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["distinctUntilChanged"])());
+        this.history.present = this.getSource(this._entityId, this.property);
+        this.subscription = ((/** @type {?} */ (this)))
+            .selectSource(this._entityId, this.property)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["pairwise"])())
+            .subscribe((/**
+         * @param {?} __0
+         * @return {?}
+         */
+        ([past, present]) => {
+            if (this.skip) {
+                this.skip = false;
+                return;
+            }
+            /**
+             *  comparator: (prev, current) => isEqual(prev, current) === false
+             * @type {?}
+             */
+            const shouldUpdate = this.params.comparator(past, present);
+            if (!this.skipUpdate && shouldUpdate) {
+                if (this.history.past.length === this.params.maxAge) {
+                    this.history.past = this.history.past.slice(1);
+                }
+                this.history.past = [...this.history.past, past];
+                this.history.present = present;
+                this.updateHasHistory();
+            }
+        }));
+    }
+    /**
+     * @return {?}
+     */
+    undo() {
+        if (this.history.past.length > 0) {
+            const { past, present } = this.history;
+            /** @type {?} */
+            const previous = past[past.length - 1];
+            this.history.past = past.slice(0, past.length - 1);
+            this.history.present = previous;
+            this.history.future = [present, ...this.history.future];
+            this.update();
+        }
+    }
+    /**
+     * @return {?}
+     */
+    redo() {
+        if (this.history.future.length > 0) {
+            const { past, present } = this.history;
+            /** @type {?} */
+            const next = this.history.future[0];
+            /** @type {?} */
+            const newFuture = this.history.future.slice(1);
+            this.history.past = [...past, present];
+            this.history.present = next;
+            this.history.future = newFuture;
+            this.update('Redo');
+        }
+    }
+    /**
+     * @param {?} index
+     * @return {?}
+     */
+    jumpToPast(index) {
+        if (index < 0 || index >= this.history.past.length)
+            return;
+        const { past, future, present } = this.history;
+        /**
+         *
+         * const past = [1, 2, 3, 4, 5];
+         * const present = 6;
+         * const future = [7, 8, 9];
+         * const index = 2;
+         *
+         * newPast = past.slice(0, index) = [1, 2];
+         * newPresent = past[index] = 3;
+         * newFuture = [...past.slice(index + 1),present, ...future] = [4, 5, 6, 7, 8, 9];
+         *
+         * @type {?}
+         */
+        const newPast = past.slice(0, index);
+        /** @type {?} */
+        const newFuture = [...past.slice(index + 1), present, ...future];
+        /** @type {?} */
+        const newPresent = past[index];
+        this.history.past = newPast;
+        this.history.present = newPresent;
+        this.history.future = newFuture;
+        this.update();
+    }
+    /**
+     * @param {?} index
+     * @return {?}
+     */
+    jumpToFuture(index) {
+        if (index < 0 || index >= this.history.future.length)
+            return;
+        const { past, future, present } = this.history;
+        /**
+         *
+         * const past = [1, 2, 3, 4, 5];
+         * const present = 6;
+         * const future = [7, 8, 9, 10]
+         * const index = 1
+         *
+         * newPast = [...past, present, ...future.slice(0, index) = [1, 2, 3, 4, 5, 6, 7];
+         * newPresent = future[index] = 8;
+         * newFuture = futrue.slice(index+1) = [9, 10];
+         *
+         * @type {?}
+         */
+        const newPast = [...past, present, ...future.slice(0, index)];
+        /** @type {?} */
+        const newPresent = future[index];
+        /** @type {?} */
+        const newFuture = future.slice(index + 1);
+        this.history.past = newPast;
+        this.history.present = newPresent;
+        this.history.future = newFuture;
+        this.update('Redo');
+    }
+    /**
+     *
+     * jump n steps in the past or forward
+     *
+     * @param {?} n
+     * @return {?}
+     */
+    jump(n) {
+        if (n > 0)
+            return this.jumpToFuture(n - 1);
+        if (n < 0)
+            return this.jumpToPast(this.history.past.length + n);
+    }
+    /**
+     * Clear the history
+     *
+     * \@example
+     *
+     * stateHistory.clear((history) => {
+     *  return {
+     *    past: history.past,
+     *    present: history.present,
+     *    future: []
+     *  };
+     * });
+     * @param {?=} customUpdateFn Callback function for only clearing part of the history
+     *
+     * @return {?}
+     */
+    clear(customUpdateFn) {
+        this.history = isFunction(customUpdateFn)
+            ? customUpdateFn(this.history)
+            : {
+                past: [],
+                present: null,
+                future: []
+            };
+        this.updateHasHistory();
+    }
+    /**
+     * @param {?=} clearHistory
+     * @return {?}
+     */
+    destroy(clearHistory = false) {
+        if (clearHistory) {
+            this.clear();
+        }
+        this.subscription.unsubscribe();
+    }
+    /**
+     * @return {?}
+     */
+    ignoreNext() {
+        this.skip = true;
+    }
+    /**
+     * @private
+     * @param {?=} action
+     * @return {?}
+     */
+    update(action$$1 = 'Undo') {
+        this.skipUpdate = true;
+        logAction(`@StateHistory - ${action$$1}`);
+        this.updateStore(this.history.present, this._entityId, this.property);
+        this.updateHasHistory();
+        this.skipUpdate = false;
+    }
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @template State, P
+ */
+class EntityStateHistoryPlugin extends EntityCollectionPlugin {
+    /**
+     * @param {?} query
+     * @param {?=} params
+     */
+    constructor(query, params = {}) {
+        super(query, params.entityIds);
+        this.query = query;
+        this.params = params;
+        params.maxAge = toBoolean(params.maxAge) ? params.maxAge : 10;
+        this.activate();
+        this.selectIds()
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["skip"])(1))
+            .subscribe((/**
+         * @param {?} ids
+         * @return {?}
+         */
+        ids => this.activate(ids)));
+    }
+    /**
+     * @param {?=} ids
+     * @return {?}
+     */
+    redo(ids) {
+        this.forEachId(ids, (/**
+         * @param {?} e
+         * @return {?}
+         */
+        e => e.redo()));
+    }
+    /**
+     * @param {?=} ids
+     * @return {?}
+     */
+    undo(ids) {
+        this.forEachId(ids, (/**
+         * @param {?} e
+         * @return {?}
+         */
+        e => e.undo()));
+    }
+    /**
+     * @param {?} id
+     * @return {?}
+     */
+    hasPast(id) {
+        if (this.hasEntity(id)) {
+            return this.getEntity(id).hasPast;
+        }
+    }
+    /**
+     * @param {?} id
+     * @return {?}
+     */
+    hasFuture(id) {
+        if (this.hasEntity(id)) {
+            return this.getEntity(id).hasFuture;
+        }
+    }
+    /**
+     * @param {?} ids
+     * @param {?} index
+     * @return {?}
+     */
+    jumpToFuture(ids, index) {
+        this.forEachId(ids, (/**
+         * @param {?} e
+         * @return {?}
+         */
+        e => e.jumpToFuture(index)));
+    }
+    /**
+     * @param {?} ids
+     * @param {?} index
+     * @return {?}
+     */
+    jumpToPast(ids, index) {
+        this.forEachId(ids, (/**
+         * @param {?} e
+         * @return {?}
+         */
+        e => e.jumpToPast(index)));
+    }
+    /**
+     * @param {?=} ids
+     * @return {?}
+     */
+    clear(ids) {
+        this.forEachId(ids, (/**
+         * @param {?} e
+         * @return {?}
+         */
+        e => e.clear()));
+    }
+    /**
+     * @param {?=} ids
+     * @param {?=} clearHistory
+     * @return {?}
+     */
+    destroy(ids, clearHistory = false) {
+        this.forEachId(ids, (/**
+         * @param {?} e
+         * @return {?}
+         */
+        e => e.destroy(clearHistory)));
+    }
+    /**
+     * @param {?=} ids
+     * @return {?}
+     */
+    ignoreNext(ids) {
+        this.forEachId(ids, (/**
+         * @param {?} e
+         * @return {?}
+         */
+        e => e.ignoreNext()));
+    }
+    /**
+     * @protected
+     * @param {?} id
+     * @return {?}
+     */
+    instantiatePlugin(id) {
+        return (/** @type {?} */ (new StateHistoryPlugin(this.query, this.params, id)));
+    }
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+const dirtyCheckDefaultParams = {
+    comparator: (/**
+     * @param {?} head
+     * @param {?} current
+     * @return {?}
+     */
+    (head, current) => JSON.stringify(head) !== JSON.stringify(current))
+};
+/**
+ * @param {?} nestedObj
+ * @param {?} path
+ * @return {?}
+ */
+function getNestedPath(nestedObj, path) {
+    /** @type {?} */
+    const pathAsArray = path.split('.');
+    return pathAsArray.reduce((/**
+     * @param {?} obj
+     * @param {?} key
+     * @return {?}
+     */
+    (obj, key) => (obj && obj[key] !== 'undefined' ? obj[key] : undefined)), nestedObj);
+}
+/**
+ * @template State
+ */
+class DirtyCheckPlugin extends AkitaPlugin {
+    /**
+     * @param {?} query
+     * @param {?=} params
+     * @param {?=} _entityId
+     */
+    constructor(query, params, _entityId) {
+        super(query);
+        this.query = query;
+        this.params = params;
+        this._entityId = _entityId;
+        this.dirty = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](false);
+        this.active = false;
+        this._reset = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        this.isDirty$ = this.dirty.asObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["distinctUntilChanged"])());
+        this.reset$ = this._reset.asObservable();
+        this.params = Object.assign({}, dirtyCheckDefaultParams, params);
+        if (this.params.watchProperty) {
+            /** @type {?} */
+            let watchProp = (/** @type {?} */ (coerceArray(this.params.watchProperty)));
+            if (query instanceof QueryEntity && watchProp.includes('entities') && !watchProp.includes('ids')) {
+                watchProp.push('ids');
+            }
+            this.params.watchProperty = watchProp;
+        }
+    }
+    /**
+     * @param {?=} params
+     * @return {?}
+     */
+    reset(params = {}) {
+        /** @type {?} */
+        let currentValue = this.head;
+        if (isFunction(params.updateFn)) {
+            if (this.isEntityBased(this._entityId)) {
+                currentValue = params.updateFn(this.head, ((/** @type {?} */ (this.getQuery()))).getEntity(this._entityId));
+            }
+            else {
+                currentValue = params.updateFn(this.head, ((/** @type {?} */ (this.getQuery()))).getValue());
+            }
+        }
+        logAction(`@DirtyCheck - Revert`);
+        this.updateStore(currentValue, this._entityId);
+        this._reset.next();
+    }
+    /**
+     * @template THIS
+     * @this {THIS}
+     * @return {THIS}
+     */
+    setHead() {
+        if (!(/** @type {?} */ (this)).active) {
+            (/** @type {?} */ (this)).activate();
+            (/** @type {?} */ (this)).active = true;
+        }
+        else {
+            (/** @type {?} */ (this)).head = (/** @type {?} */ (this))._getHead();
+        }
+        (/** @type {?} */ (this)).updateDirtiness(false);
+        return (/** @type {?} */ (this));
+    }
+    /**
+     * @return {?}
+     */
+    isDirty() {
+        return !!this.dirty.value;
+    }
+    /**
+     * @return {?}
+     */
+    hasHead() {
+        return !!this.getHead();
+    }
+    /**
+     * @return {?}
+     */
+    destroy() {
+        this.head = null;
+        this.subscription && this.subscription.unsubscribe();
+        this._reset && this._reset.complete();
+    }
+    /**
+     * @param {?} path
+     * @return {?}
+     */
+    isPathDirty(path) {
+        /** @type {?} */
+        const head = this.getHead();
+        /** @type {?} */
+        const current = ((/** @type {?} */ (this.getQuery()))).getValue();
+        /** @type {?} */
+        const currentPathValue = getNestedPath(current, path);
+        /** @type {?} */
+        const headPathValue = getNestedPath(head, path);
+        return this.params.comparator(currentPathValue, headPathValue);
+    }
+    /**
+     * @protected
+     * @return {?}
+     */
+    getHead() {
+        return this.head;
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    activate() {
+        this.head = this._getHead();
+        /**
+         * if we are tracking specific properties select only the relevant ones
+         * @type {?}
+         */
+        const source = this.params.watchProperty
+            ? ((/** @type {?} */ (this.params.watchProperty))).map((/**
+             * @param {?} prop
+             * @return {?}
+             */
+            prop => this.query
+                .select((/**
+             * @param {?} state
+             * @return {?}
+             */
+            state => state[prop]))
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])((/**
+             * @param {?} val
+             * @return {?}
+             */
+            val => ({
+                val,
+                __akitaKey: prop
+            }))))))
+            : [this.selectSource(this._entityId)];
+        this.subscription = Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["combineLatest"])(...source)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["skip"])(1))
+            .subscribe((/**
+         * @param {?} currentState
+         * @return {?}
+         */
+        (currentState) => {
+            if (isUndefined(this.head))
+                return;
+            /**
+             * __akitaKey is used to determine if we are tracking a specific property or a store change
+             * @type {?}
+             */
+            const isChange = currentState.some((/**
+             * @param {?} state
+             * @return {?}
+             */
+            state => {
+                /** @type {?} */
+                const head = state.__akitaKey ? this.head[(/** @type {?} */ (state.__akitaKey))] : this.head;
+                /** @type {?} */
+                const compareTo = state.__akitaKey ? state.val : state;
+                return this.params.comparator(head, compareTo);
+            }));
+            this.updateDirtiness(isChange);
+        }));
+    }
+    /**
+     * @private
+     * @param {?} isDirty
+     * @return {?}
+     */
+    updateDirtiness(isDirty) {
+        this.dirty.next(isDirty);
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    _getHead() {
+        /** @type {?} */
+        let head = this.getSource(this._entityId);
+        if (this.params.watchProperty) {
+            head = this.getWatchedValues((/** @type {?} */ (head)));
+        }
+        return head;
+    }
+    /**
+     * @private
+     * @param {?} source
+     * @return {?}
+     */
+    getWatchedValues(source) {
+        return ((/** @type {?} */ (this.params.watchProperty))).reduce((/**
+         * @param {?} watched
+         * @param {?} prop
+         * @return {?}
+         */
+        (watched, prop) => {
+            watched[prop] = source[prop];
+            return watched;
+        }), (/** @type {?} */ ({})));
+    }
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @template State, P
+ */
+class EntityDirtyCheckPlugin extends EntityCollectionPlugin {
+    /**
+     * @param {?} query
+     * @param {?=} params
+     */
+    constructor(query, params = {}) {
+        super(query, params.entityIds);
+        this.query = query;
+        this.params = params;
+        this._someDirty = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        this.someDirty$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["merge"])(this.query.select((/**
+         * @param {?} state
+         * @return {?}
+         */
+        state => state.entities)), this._someDirty.asObservable()).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["auditTime"])(0), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])((/**
+         * @return {?}
+         */
+        () => this.checkSomeDirty())));
+        this.params = Object.assign({}, dirtyCheckDefaultParams, params);
+        // TODO lazy activate?
+        this.activate();
+        this.selectIds()
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["skip"])(1))
+            .subscribe((/**
+         * @param {?} ids
+         * @return {?}
+         */
+        ids => {
+            super.rebase(ids, { afterAdd: (/**
+                 * @param {?} plugin
+                 * @return {?}
+                 */
+                plugin => plugin.setHead()) });
+        }));
+    }
+    /**
+     * @template THIS
+     * @this {THIS}
+     * @param {?=} ids
+     * @return {THIS}
+     */
+    setHead(ids) {
+        if ((/** @type {?} */ (this)).params.entityIds && ids) {
+            /** @type {?} */
+            const toArray = (/** @type {?} */ (coerceArray(ids)));
+            /** @type {?} */
+            const someAreWatched = coerceArray((/** @type {?} */ (this)).params.entityIds).some((/**
+             * @param {?} id
+             * @return {?}
+             */
+            id => toArray.indexOf(id) > -1));
+            if (someAreWatched === false) {
+                return (/** @type {?} */ (this));
+            }
+        }
+        (/** @type {?} */ (this)).forEachId(ids, (/**
+         * @param {?} e
+         * @return {?}
+         */
+        e => e.setHead()));
+        (/** @type {?} */ (this))._someDirty.next();
+        return (/** @type {?} */ (this));
+    }
+    /**
+     * @param {?} id
+     * @return {?}
+     */
+    hasHead(id) {
+        if (this.entities.has(id)) {
+            /** @type {?} */
+            const entity = this.getEntity(id);
+            return entity.hasHead();
+        }
+        return false;
+    }
+    /**
+     * @param {?=} ids
+     * @param {?=} params
+     * @return {?}
+     */
+    reset(ids, params = {}) {
+        this.forEachId(ids, (/**
+         * @param {?} e
+         * @return {?}
+         */
+        e => e.reset(params)));
+    }
+    /**
+     * @param {?} id
+     * @param {?=} asObservable
+     * @return {?}
+     */
+    isDirty(id, asObservable = true) {
+        if (this.entities.has(id)) {
+            /** @type {?} */
+            const entity = this.getEntity(id);
+            return asObservable ? entity.isDirty$ : entity.isDirty();
+        }
+        return false;
+    }
+    /**
+     * @return {?}
+     */
+    someDirty() {
+        return this.checkSomeDirty();
+    }
+    /**
+     * @param {?} id
+     * @param {?} path
+     * @return {?}
+     */
+    isPathDirty(id, path) {
+        if (this.entities.has(id)) {
+            /** @type {?} */
+            const head = ((/** @type {?} */ (this.getEntity(id)))).getHead();
+            /** @type {?} */
+            const current = this.query.getEntity(id);
+            /** @type {?} */
+            const currentPathValue = getNestedPath(current, path);
+            /** @type {?} */
+            const headPathValue = getNestedPath(head, path);
+            return this.params.comparator(currentPathValue, headPathValue);
+        }
+        return null;
+    }
+    /**
+     * @param {?=} ids
+     * @return {?}
+     */
+    destroy(ids) {
+        this.forEachId(ids, (/**
+         * @param {?} e
+         * @return {?}
+         */
+        e => e.destroy()));
+        /** complete only when the plugin destroys */
+        if (!ids) {
+            this._someDirty.complete();
+        }
+    }
+    /**
+     * @protected
+     * @param {?} id
+     * @return {?}
+     */
+    instantiatePlugin(id) {
+        return (/** @type {?} */ (new DirtyCheckPlugin(this.query, this.params, id)));
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    checkSomeDirty() {
+        /** @type {?} */
+        const entitiesIds = this.resolvedIds();
+        for (const id of entitiesIds) {
+            if (this.getEntity(id).isDirty()) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Generate random guid
+ *
+ * \@example
+ *
+ * {
+ *   id: guid()
+ * }
+ *
+ * @return {?}
+ */
+function guid() {
+    return 'xxxxxx4xyx'.replace(/[xy]/g, (/**
+     * @param {?} c
+     * @return {?}
+     */
+    c => {
+        /** @type {?} */
+        const r = (Math.random() * 16) | 0;
+        /** @type {?} */
+        const v = c == 'x' ? r : (r & 0x3) | 0x8;
+        return v.toString(16);
+    }));
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @template E
+ * @param {?} entities
+ * @param {?=} idKey
+ * @return {?}
+ */
+function toEntitiesIds(entities, idKey = DEFAULT_ID_KEY) {
+    /** @type {?} */
+    const ids = [];
+    for (const entity of entities) {
+        ids.push(entity[idKey]);
+    }
+    return ids;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Reset stores back to their initial state
+ *
+ * \@example
+ *
+ * resetStores()
+ * resetStores({
+ *   exclude: ['auth']
+ * })
+ * @param {?=} options
+ * @return {?}
+ */
+function resetStores(options) {
+    /** @type {?} */
+    const defaults = {
+        exclude: []
+    };
+    options = Object.assign({}, defaults, options);
+    /** @type {?} */
+    const stores = Object.keys(__stores__);
+    applyTransaction((/**
+     * @return {?}
+     */
+    () => {
+        for (const store of stores) {
+            /** @type {?} */
+            const s = __stores__[store];
+            if (!options.exclude) {
+                s.reset();
+            }
+            else {
+                if (options.exclude.indexOf(s.storeName) === -1) {
+                    s.reset();
+                }
+            }
+        }
+    }));
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @param {?} value
+ * @return {?}
+ */
+function isNumber(value) {
+    return !isArray(value) && value - parseFloat(value) + 1 >= 0;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @enum {number} */
+const StoreActions = {
+    Update: 0,
+    AddEntities: 1,
+    SetEntities: 2,
+    UpdateEntities: 3,
+    RemoveEntities: 4,
+    UpsertEntities: 5,
+};
+StoreActions[StoreActions.Update] = 'Update';
+StoreActions[StoreActions.AddEntities] = 'AddEntities';
+StoreActions[StoreActions.SetEntities] = 'SetEntities';
+StoreActions[StoreActions.UpdateEntities] = 'UpdateEntities';
+StoreActions[StoreActions.RemoveEntities] = 'RemoveEntities';
+StoreActions[StoreActions.UpsertEntities] = 'UpsertEntities';
+/**
+ * @template EntityOrState
+ * @param {?} storeName
+ * @param {?} action
+ * @param {?} params
+ * @return {?}
+ */
+function runStoreAction(storeName, action, params) {
+    /** @type {?} */
+    const store = __stores__[storeName];
+    if (isNil(store)) {
+        throw new AkitaError(`${storeName} doesn't exist`);
+    }
+    switch (action) {
+        case StoreActions.SetEntities: {
+            const { payload } = (/** @type {?} */ (params));
+            ((/** @type {?} */ (store))).set(payload.data);
+            return;
+        }
+        case StoreActions.AddEntities: {
+            const { payload } = (/** @type {?} */ (params));
+            ((/** @type {?} */ (store))).add(payload.data, payload.params);
+            return;
+        }
+        case StoreActions.UpdateEntities: {
+            const { payload } = (/** @type {?} */ (params));
+            ((/** @type {?} */ (store))).update(payload.entityIds, payload.data);
+            return;
+        }
+        case StoreActions.RemoveEntities: {
+            const { payload } = (/** @type {?} */ (params));
+            ((/** @type {?} */ (store))).remove(payload.entityIds);
+            return;
+        }
+        case StoreActions.UpsertEntities: {
+            const { payload } = (/** @type {?} */ (params));
+            if (payload.entityIds) {
+                ((/** @type {?} */ (store))).upsert(payload.entityIds, payload.data);
+            }
+            else if (Array.isArray(payload.data)) {
+                ((/** @type {?} */ (store))).upsertMany(payload.data);
+            }
+            else {
+                ((/** @type {?} */ (store))).upsertMany([payload.data]);
+            }
+            return;
+        }
+        case StoreActions.Update: {
+            const { payload } = (/** @type {?} */ (params));
+            ((/** @type {?} */ (store))).update(payload.data);
+            return;
+        }
+    }
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @template Root, Entity
+ * @param {?} keyOrRoot
+ * @param {?} predicateOrIds
+ * @param {?} obj
+ * @param {?=} idKey
+ * @return {?}
+ */
+function arrayUpdate(keyOrRoot, predicateOrIds, obj, idKey = DEFAULT_ID_KEY) {
+    /** @type {?} */
+    let condition;
+    if (isFunction(predicateOrIds)) {
+        condition = predicateOrIds;
+    }
+    else {
+        /** @type {?} */
+        const ids = coerceArray(predicateOrIds);
+        condition = (/**
+         * @param {?} item
+         * @return {?}
+         */
+        item => ids.includes(isObject(item) ? item[idKey] : item) === true);
+    }
+    /** @type {?} */
+    const updateFn = (/**
+     * @param {?} state
+     * @return {?}
+     */
+    state => state.map((/**
+     * @param {?} entity
+     * @return {?}
+     */
+    entity => {
+        if (condition(entity) === true) {
+            return isObject(entity)
+                ? Object.assign({}, entity, obj) : obj;
+        }
+        return entity;
+    })));
+    if (isArray(keyOrRoot)) {
+        return updateFn(keyOrRoot);
+    }
+    return (/**
+     * @param {?} root
+     * @return {?}
+     */
+    root => {
+        return {
+            [(/** @type {?} */ (keyOrRoot))]: updateFn(root[keyOrRoot])
+        };
+    });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @template Root, Entity
+ * @param {?} keyOrRoot
+ * @param {?} newEntity
+ * @param {?=} options
+ * @return {?}
+ */
+function arrayAdd(keyOrRoot, newEntity, options = {}) {
+    /** @type {?} */
+    const newEntities = coerceArray(newEntity);
+    /** @type {?} */
+    const addFn = (/**
+     * @param {?} state
+     * @return {?}
+     */
+    state => (options.prepend ? [...newEntities, ...(state || [])] : [...(state || []), ...newEntities]));
+    if (isArray(keyOrRoot)) {
+        return addFn(keyOrRoot);
+    }
+    return (/**
+     * @param {?} state
+     * @return {?}
+     */
+    state => {
+        return {
+            [(/** @type {?} */ (keyOrRoot))]: addFn(state[keyOrRoot])
+        };
+    });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Upsert item in a collection
+ *
+ * \@example
+ *
+ *
+ * store.update(1, entity => ({
+ *   comments: arrayUpsert(entity.comments, 1, { name: 'newComment' })
+ * }))
+ * @template Root
+ * @param {?} arr
+ * @param {?} id
+ * @param {?} obj
+ * @param {?=} idKey
+ * @return {?}
+ */
+function arrayUpsert(arr, id, obj, idKey = DEFAULT_ID_KEY) {
+    /** @type {?} */
+    const entityIsObject = isObject(obj);
+    /** @type {?} */
+    const entityExists = arr.some((/**
+     * @param {?} entity
+     * @return {?}
+     */
+    entity => (entityIsObject ? entity[idKey] === id : entity === id)));
+    if (entityExists) {
+        return arrayUpdate(arr, id, obj, idKey);
+    }
+    else {
+        return arrayAdd(arr, entityIsObject ? Object.assign({}, obj, { [idKey]: id }) : obj);
+    }
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// @internal
+/**
+ * @param {?} pred
+ * @return {?}
+ */
+function not(pred) {
+    return (/**
+     * @param {...?} args
+     * @return {?}
+     */
+    function (...args) {
+        return !pred(...args);
+    });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @template Root, Entity
+ * @param {?} keyOrRoot
+ * @param {?} identifier
+ * @param {?=} idKey
+ * @return {?}
+ */
+function arrayRemove(keyOrRoot, identifier, idKey = DEFAULT_ID_KEY) {
+    /** @type {?} */
+    let identifiers;
+    /** @type {?} */
+    let filterFn;
+    if (isFunction(identifier)) {
+        filterFn = not(identifier);
+    }
+    else {
+        identifiers = coerceArray((/** @type {?} */ (identifier)));
+        filterFn = (/**
+         * @param {?} current
+         * @return {?}
+         */
+        current => {
+            return identifiers.includes(isObject(current) ? current[idKey] : current) === false;
+        });
+    }
+    if (Array.isArray(keyOrRoot)) {
+        return keyOrRoot.filter(filterFn);
+    }
+    return (/**
+     * @param {?} state
+     * @return {?}
+     */
+    state => {
+        return {
+            [(/** @type {?} */ (keyOrRoot))]: state[keyOrRoot].filter(filterFn)
+        };
+    });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @template State
+ * @param {?} initialState
+ * @param {?} options
+ * @return {?}
+ */
+function createStore(initialState, options) {
+    return new Store(initialState, options);
+}
+/**
+ * @template State
+ * @param {?} store
+ * @return {?}
+ */
+function createQuery(store) {
+    return new Query(store);
+}
+/**
+ * @template State
+ * @param {?} initialState
+ * @param {?} options
+ * @return {?}
+ */
+function createEntityStore(initialState, options) {
+    return new EntityStore(initialState, options);
+}
+/**
+ * @template State
+ * @param {?} store
+ * @param {?=} options
+ * @return {?}
+ */
+function createEntityQuery(store, options = {}) {
+    return new QueryEntity(store, options);
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ *
+ * Helper function for checking if we have data in cache
+ *
+ * export class ProductsService {
+ *   constructor(private productsStore: ProductsStore) {}
+ *   get(): Observable<void> {
+ *     const request = this.http.get().pipe(
+ *       tap(this.productsStore.set(response))
+ *     );
+ *
+ *     return cacheable(this.productsStore, request);
+ *   }
+ * }
+ * @template T
+ * @param {?} store
+ * @param {?} request$
+ * @param {?=} options
+ * @return {?}
+ */
+function cacheable(store, request$, options = { emitNext: false }) {
+    if (store._cache().value) {
+        return options.emitNext ? Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(undefined) : rxjs__WEBPACK_IMPORTED_MODULE_1__["EMPTY"];
+    }
+    return request$;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @template R
+ * @param {?} observables
+ * @return {?}
+ */
+function combineQueries(observables) {
+    return (/** @type {?} */ (Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["combineLatest"])(observables).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["auditTime"])(0))));
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @abstract
+ * @template S
+ */
+class EntityService {
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @param {?} store
+ * @return {?}
+ */
+function setLoading(store) {
+    return (/**
+     * @template T
+     * @param {?} source
+     * @return {?}
+     */
+    function (source) {
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["defer"])((/**
+         * @return {?}
+         */
+        () => {
+            store.setLoading(true);
+            return source.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["finalize"])((/**
+             * @return {?}
+             */
+            () => store.setLoading(false))));
+        }));
+    });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+
+
+//# sourceMappingURL=datorama-akita.js.map
+
+/***/ }),
+
 /***/ "4f8F":
 /*!***************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/operators/race.js ***!
@@ -2484,6 +8633,304 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isArray", function() { return isArray; });
 const isArray = (() => Array.isArray || ((x) => x && typeof x.length === 'number'))();
 //# sourceMappingURL=isArray.js.map
+
+/***/ }),
+
+/***/ "Dxt5":
+/*!**************************************************************************************************************!*\
+  !*** ./node_modules/@datorama/akita-ng-router-store/__ivy_ngcc__/fesm2015/datorama-akita-ng-router-store.js ***!
+  \**************************************************************************************************************/
+/*! exports provided: AkitaNgRouterStoreModule, RouterQuery, RouterService, RouterStore, createInitialRouterState */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AkitaNgRouterStoreModule", function() { return AkitaNgRouterStoreModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterQuery", function() { return RouterQuery; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterService", function() { return RouterService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouterStore", function() { return RouterStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createInitialRouterState", function() { return createInitialRouterState; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "hkni");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _datorama_akita__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @datorama/akita */ "4ZtF");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+
+
+
+
+
+
+
+
+function createInitialRouterState() {
+    return {
+        state: null,
+        navigationId: null
+    };
+}
+let RouterStore = class RouterStore extends _datorama_akita__WEBPACK_IMPORTED_MODULE_2__["Store"] {
+    constructor() {
+        super(createInitialRouterState());
+    }
+};
+RouterStore.ɵfac = function RouterStore_Factory(t) { return new (t || RouterStore)(); };
+RouterStore.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: RouterStore, factory: function (t) { return RouterStore.ɵfac(t); }, providedIn: 'root' });
+RouterStore.ngInjectableDef = Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["defineInjectable"])({ factory: function RouterStore_Factory() { return new RouterStore(); }, token: RouterStore, providedIn: "root" });
+RouterStore = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(_datorama_akita__WEBPACK_IMPORTED_MODULE_2__["StoreConfig"])({ name: 'router' }),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [])
+], RouterStore);
+
+function slice(section) {
+    return (source) => {
+        return source.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(data => data.state)).pipe(_datorama_akita__WEBPACK_IMPORTED_MODULE_2__["filterNil"], Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(state => state.root[section]));
+    };
+}
+let RouterQuery = class RouterQuery extends _datorama_akita__WEBPACK_IMPORTED_MODULE_2__["Query"] {
+    constructor(store) {
+        super(store);
+        this.store = store;
+    }
+    selectParams(names) {
+        if (names === undefined) {
+            return this.select().pipe(slice('params'), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["distinctUntilChanged"])());
+        }
+        const select = (p) => this.select().pipe(slice('params'), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["pluck"])(p), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["distinctUntilChanged"])());
+        if (Array.isArray(names)) {
+            const sources = names.map(select);
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["combineLatest"])(sources);
+        }
+        return select(names).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["distinctUntilChanged"])());
+    }
+    getParams(name) {
+        if (this.getValue().state) {
+            const params = this.getValue().state.root.params;
+            if (name === undefined) {
+                return params;
+            }
+            return params[name];
+        }
+        return null;
+    }
+    selectQueryParams(names) {
+        if (names === undefined) {
+            return this.select().pipe(slice('queryParams'), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["distinctUntilChanged"])());
+        }
+        const select = (p) => this.select().pipe(slice('queryParams'), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["pluck"])(p), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["distinctUntilChanged"])());
+        if (Array.isArray(names)) {
+            const sources = names.map(select);
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["combineLatest"])(sources);
+        }
+        return select(names);
+    }
+    getQueryParams(name) {
+        if (this.getValue().state) {
+            const params = this.getValue().state.root.params;
+            if (name === undefined) {
+                return params;
+            }
+            return params[name];
+        }
+        return null;
+    }
+    selectFragment() {
+        return this.select().pipe(slice('fragment'), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["distinctUntilChanged"])());
+    }
+    getFragment() {
+        if (this.getValue().state) {
+            return this.getValue().state.root.fragment;
+        }
+        return null;
+    }
+    selectData(name) {
+        if (name === undefined) {
+            return this.select().pipe(slice('data'), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["distinctUntilChanged"])());
+        }
+        return this.select().pipe(slice('data'), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["pluck"])(name), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["distinctUntilChanged"])());
+    }
+    getData(name) {
+        if (this.getValue().state) {
+            const data = this.getValue().state.root.data;
+            if (name === undefined) {
+                return data;
+            }
+            return data[name];
+        }
+        return null;
+    }
+};
+RouterQuery.ɵfac = function RouterQuery_Factory(t) { return new (t || RouterQuery)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](RouterStore)); };
+RouterQuery.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: RouterQuery, factory: function (t) { return RouterQuery.ɵfac(t); } });
+RouterQuery = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [RouterStore])
+], RouterQuery);
+
+let RouterService = class RouterService {
+    constructor(routerStore, routerQuery, router) {
+        this.routerStore = routerStore;
+        this.routerQuery = routerQuery;
+        this.router = router;
+        this.dispatchTriggeredByRouter = false;
+        this.navigationTriggeredByDispatch = false;
+    }
+    dispatchRouterCancel(event) {
+        this.update();
+    }
+    dispatchRouterError(event) {
+        this.update();
+    }
+    dispatchRouterNavigation() {
+        this.update();
+    }
+    init() {
+        this.setUpRouterHook();
+        this.setUpStoreListener();
+        this.setUpStateRollbackEvents();
+    }
+    update() {
+        this.dispatchTriggeredByRouter = true;
+        this.routerStore.update((state) => {
+            return Object.assign({}, state, { state: this.routerStateSnapshot, navigationId: this.lastRoutesRecognized ? this.lastRoutesRecognized.id : null });
+        });
+        this.dispatchTriggeredByRouter = false;
+        this.navigationTriggeredByDispatch = false;
+    }
+    /**
+     * Hook into the angular router before each navigation action is performed
+     * since the route tree can be large, we serialize it into something more manageable
+     */
+    setUpRouterHook() {
+        this.router.hooks.beforePreactivation = (routerStateSnapshot) => {
+            this.routerStateSnapshot = {
+                root: this.serializeRoute(routerStateSnapshot.root),
+                url: routerStateSnapshot.url
+            };
+            if (this.shouldDispatchRouterNavigation())
+                this.dispatchRouterNavigation();
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(true);
+        };
+    }
+    setUpStoreListener() {
+        this.routerQuery
+            .select(state => state)
+            .subscribe(s => {
+            this.routerState = s;
+            this.navigateIfNeeded();
+        });
+    }
+    shouldDispatchRouterNavigation() {
+        if (!this.routerState)
+            return true;
+        return !this.navigationTriggeredByDispatch;
+    }
+    navigateIfNeeded() {
+        if (!this.routerState || !this.routerState.state) {
+            return;
+        }
+        if (this.dispatchTriggeredByRouter)
+            return;
+        if (this.router.url !== this.routerState.state.url) {
+            this.navigationTriggeredByDispatch = true;
+            Object(_datorama_akita__WEBPACK_IMPORTED_MODULE_2__["setSkipAction"])();
+            this.router.navigateByUrl(this.routerState.state.url);
+        }
+    }
+    setUpStateRollbackEvents() {
+        this.router.events.subscribe(e => {
+            if (e instanceof _angular_router__WEBPACK_IMPORTED_MODULE_3__["RoutesRecognized"]) {
+                this.lastRoutesRecognized = e;
+            }
+            else if (e instanceof _angular_router__WEBPACK_IMPORTED_MODULE_3__["NavigationCancel"]) {
+                this.dispatchRouterCancel(e);
+            }
+            else if (e instanceof _angular_router__WEBPACK_IMPORTED_MODULE_3__["NavigationError"]) {
+                this.dispatchRouterError(e);
+            }
+        });
+    }
+    serializeRoute(route) {
+        let state = route.root;
+        while (state.firstChild) {
+            state = state.firstChild;
+        }
+        const { params, data, paramMap, queryParamMap, queryParams, fragment } = state;
+        return {
+            url: route.url,
+            params,
+            queryParams,
+            fragment,
+            data,
+            paramMap,
+            queryParamMap
+        };
+    }
+};
+RouterService.ɵfac = function RouterService_Factory(t) { return new (t || RouterService)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](RouterStore), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](RouterQuery), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"])); };
+RouterService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: RouterService, factory: function (t) { return RouterService.ɵfac(t); }, providedIn: 'root' });
+RouterService.ngInjectableDef = Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["defineInjectable"])({ factory: function RouterService_Factory() { return new RouterService(Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["inject"])(RouterStore), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["inject"])(RouterQuery), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["inject"])(_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"])); }, token: RouterService, providedIn: "root" });
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_datorama_akita__WEBPACK_IMPORTED_MODULE_2__["action"])('Navigation Cancelled'),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Function),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["NavigationCancel"]]),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", void 0)
+], RouterService.prototype, "dispatchRouterCancel", null);
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_datorama_akita__WEBPACK_IMPORTED_MODULE_2__["action"])('Navigation Error'),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Function),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["NavigationError"]]),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", void 0)
+], RouterService.prototype, "dispatchRouterError", null);
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_datorama_akita__WEBPACK_IMPORTED_MODULE_2__["action"])('Navigation'),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Function),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", []),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:returntype", void 0)
+], RouterService.prototype, "dispatchRouterNavigation", null);
+RouterService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [RouterStore, RouterQuery, _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+], RouterService);
+
+var AkitaNgRouterStoreModule_1;
+let AkitaNgRouterStoreModule = AkitaNgRouterStoreModule_1 = class AkitaNgRouterStoreModule {
+    constructor(routerService) {
+        this.routerService = routerService;
+        this.routerService.init();
+    }
+    static forRoot() {
+        return {
+            ngModule: AkitaNgRouterStoreModule_1,
+            providers: [RouterStore, RouterService, RouterQuery]
+        };
+    }
+};
+AkitaNgRouterStoreModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AkitaNgRouterStoreModule });
+AkitaNgRouterStoreModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AkitaNgRouterStoreModule_Factory(t) { return new (t || AkitaNgRouterStoreModule)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](RouterService)); } });
+AkitaNgRouterStoreModule = AkitaNgRouterStoreModule_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [RouterService])
+], AkitaNgRouterStoreModule);
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](RouterStore, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"],
+        args: [{ providedIn: 'root' }]
+    }], function () { return []; }, null); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](RouterQuery, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"]
+    }], function () { return [{ type: RouterStore }]; }, null); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](RouterService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"],
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return [{ type: RouterStore }, { type: RouterQuery }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }]; }, null); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AkitaNgRouterStoreModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
+        args: [{}]
+    }], function () { return [{ type: RouterService }]; }, null); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=datorama-akita-ng-router-store.js.map
 
 /***/ }),
 
@@ -6414,6 +12861,110 @@ function subscribeToResult(outerSubscriber, result, outerValue, outerIndex, inne
 
 /***/ }),
 
+/***/ "ZWwf":
+/*!****************************************************************************************************!*\
+  !*** ./node_modules/@datorama/akita-ngdevtools/__ivy_ngcc__/fesm2015/datorama-akita-ngdevtools.js ***!
+  \****************************************************************************************************/
+/*! exports provided: d, init, DEVTOOLS_OPTIONS, AkitaDevtools, AkitaNgDevtools */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return d; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "init", function() { return init; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DEVTOOLS_OPTIONS", function() { return DEVTOOLS_OPTIONS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AkitaDevtools", function() { return AkitaDevtools; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AkitaNgDevtools", function() { return AkitaNgDevtools; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _datorama_akita__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @datorama/akita */ "4ZtF");
+
+
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+
+const DEVTOOLS_OPTIONS = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('DevtoolsOptions');
+class AkitaDevtools {
+    /**
+     * @param {?} ngZone
+     * @param {?} options
+     */
+    constructor(ngZone, options) {
+        this.ngZone = ngZone;
+        this.options = options;
+        Object(_datorama_akita__WEBPACK_IMPORTED_MODULE_1__["akitaDevtools"])(this.ngZone, this.options);
+    }
+}
+AkitaDevtools.ɵfac = function AkitaDevtools_Factory(t) { return new (t || AkitaDevtools)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](DEVTOOLS_OPTIONS)); };
+AkitaDevtools.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: AkitaDevtools, factory: AkitaDevtools.ɵfac });
+/** @nocollapse */
+AkitaDevtools.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"] },
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"], args: [DEVTOOLS_OPTIONS,] }] }
+];
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AkitaDevtools, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"] }, { type: undefined, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"],
+                args: [DEVTOOLS_OPTIONS]
+            }] }]; }, null); })();
+// auto initialize the devtools
+/**
+ * @return {?}
+ */
+function d() { }
+/**
+ * @param {?} akitaDevtools
+ * @return {?}
+ */
+function init(akitaDevtools$$1) {
+    return d;
+}
+class AkitaNgDevtools {
+    /**
+     * @param {?=} options
+     * @return {?}
+     */
+    static forRoot(options) {
+        return {
+            ngModule: AkitaNgDevtools,
+            providers: [
+                AkitaDevtools,
+                {
+                    provide: DEVTOOLS_OPTIONS,
+                    useValue: options
+                },
+                {
+                    provide: _angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_INITIALIZER"],
+                    useFactory: init,
+                    deps: [AkitaDevtools],
+                    multi: true
+                }
+            ]
+        };
+    }
+}
+AkitaNgDevtools.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: AkitaNgDevtools });
+AkitaNgDevtools.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function AkitaNgDevtools_Factory(t) { return new (t || AkitaNgDevtools)(); } });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AkitaNgDevtools, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{}]
+    }], null, null); })();
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+
+
+//# sourceMappingURL=datorama-akita-ngdevtools.js.map
+
+/***/ }),
+
 /***/ "Zy1z":
 /*!*******************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/operators/pairwise.js ***!
@@ -7122,6 +13673,632 @@ class SingleSubscriber extends _Subscriber__WEBPACK_IMPORTED_MODULE_0__["Subscri
     }
 }
 //# sourceMappingURL=single.js.map
+
+/***/ }),
+
+/***/ "d5yd":
+/*!******************************************************************************************************************!*\
+  !*** ./node_modules/@datorama/akita-ng-entity-service/__ivy_ngcc__/fesm2015/datorama-akita-ng-entity-service.js ***!
+  \******************************************************************************************************************/
+/*! exports provided: HttpMethod, NG_ENTITY_SERVICE_CONFIG, NgEntityService, NgEntityServiceConfig, NgEntityServiceLoader, NgEntityServiceNotifier, defaultConfig, errorAction, filterMethod, filterStore, isID, mapResponse, mergeDeep, ofType, successAction */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HttpMethod", function() { return HttpMethod; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NG_ENTITY_SERVICE_CONFIG", function() { return NG_ENTITY_SERVICE_CONFIG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgEntityService", function() { return NgEntityService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgEntityServiceConfig", function() { return NgEntityServiceConfig; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgEntityServiceLoader", function() { return NgEntityServiceLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgEntityServiceNotifier", function() { return NgEntityServiceNotifier; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaultConfig", function() { return defaultConfig; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "errorAction", function() { return errorAction; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "filterMethod", function() { return filterMethod; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "filterStore", function() { return filterStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isID", function() { return isID; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapResponse", function() { return mapResponse; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mergeDeep", function() { return mergeDeep; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ofType", function() { return ofType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "successAction", function() { return successAction; });
+/* harmony import */ var _datorama_akita__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @datorama/akita */ "4ZtF");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+
+
+
+
+
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @enum {string} */
+
+const HttpMethod = {
+    GET: 'GET',
+    POST: 'POST',
+    PUT: 'PUT',
+    PATCH: 'PATCH',
+    DELETE: 'DELETE',
+};
+/** @type {?} */
+const ofType = (/**
+ * @param {?} type
+ * @return {?}
+ */
+(type) => Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["filter"])((/**
+ * @param {?} action
+ * @return {?}
+ */
+(action) => action.type === type)));
+/** @type {?} */
+const filterMethod = (/**
+ * @param {?} method
+ * @return {?}
+ */
+(method) => Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["filter"])((/**
+ * @param {?} action
+ * @return {?}
+ */
+(action) => action.method === method)));
+/** @type {?} */
+const filterStore = (/**
+ * @param {?} name
+ * @return {?}
+ */
+(name) => Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["filter"])((/**
+ * @param {?} action
+ * @return {?}
+ */
+(action) => action.storeName === name)));
+class NgEntityServiceNotifier {
+    constructor() {
+        this.dispatcher = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        this.action$ = this.dispatcher.asObservable();
+    }
+    /**
+     * @param {?} event
+     * @return {?}
+     */
+    dispatch(event) {
+        this.dispatcher.next(event);
+    }
+}
+NgEntityServiceNotifier.ɵfac = function NgEntityServiceNotifier_Factory(t) { return new (t || NgEntityServiceNotifier)(); };
+NgEntityServiceNotifier.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({ token: NgEntityServiceNotifier, factory: NgEntityServiceNotifier.ɵfac, providedIn: 'root' });
+/** @nocollapse */ NgEntityServiceNotifier.ngInjectableDef = Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"])({ factory: function NgEntityServiceNotifier_Factory() { return new NgEntityServiceNotifier(); }, token: NgEntityServiceNotifier, providedIn: "root" });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NgEntityServiceNotifier, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Injectable"],
+        args: [{ providedIn: 'root' }]
+    }], function () { return []; }, null); })();
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+class NgEntityServiceLoader {
+    constructor() {
+        this.dispatcher = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        this.loading$ = this.dispatcher.asObservable();
+    }
+    /**
+     * @param {?} event
+     * @return {?}
+     */
+    dispatch(event) {
+        this.dispatcher.next(event);
+    }
+    /**
+     * @param {?=} name
+     * @return {?}
+     */
+    loadersFor(name) {
+        /** @type {?} */
+        const filterStore = Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["filter"])((/**
+         * @param {?} __0
+         * @return {?}
+         */
+        ({ storeName }) => (name ? storeName === name : true)));
+        /** @type {?} */
+        const filterMethod = (/**
+         * @param {?} mthd
+         * @return {?}
+         */
+        mthd => Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["filter"])((/**
+         * @param {?} __0
+         * @return {?}
+         */
+        ({ method }) => {
+            return Object(_datorama_akita__WEBPACK_IMPORTED_MODULE_0__["isFunction"])(mthd) ? mthd(method) : method === mthd;
+        })));
+        /** @type {?} */
+        const actionBased = (/**
+         * @param {?} current
+         * @return {?}
+         */
+        (current) => this.loading$.pipe(filterStore, filterMethod(current), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])((/**
+         * @param {?} action
+         * @return {?}
+         */
+        action => action.loading))));
+        /** @type {?} */
+        const idBased = (/**
+         * @param {?} id
+         * @param {?} mthd
+         * @return {?}
+         */
+        (id, mthd) => this.loading$.pipe(filterStore, filterMethod(mthd), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["filter"])((/**
+         * @param {?} action
+         * @return {?}
+         */
+        action => action.entityId === id)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])((/**
+         * @param {?} action
+         * @return {?}
+         */
+        action => action.loading))));
+        return {
+            get$: actionBased(HttpMethod.GET),
+            add$: actionBased(HttpMethod.POST),
+            update$: actionBased((/**
+             * @param {?} method
+             * @return {?}
+             */
+            method => method === HttpMethod.PUT || method === HttpMethod.PATCH)),
+            delete$: actionBased(HttpMethod.DELETE),
+            getEntity: (/**
+             * @param {?} id
+             * @return {?}
+             */
+            (id) => idBased(id, HttpMethod.GET)),
+            updateEntity: (/**
+             * @param {?} id
+             * @return {?}
+             */
+            (id) => idBased(id, (/**
+             * @param {?} method
+             * @return {?}
+             */
+            method => method === HttpMethod.PUT || method === HttpMethod.PATCH))),
+            deleteEntity: (/**
+             * @param {?} id
+             * @return {?}
+             */
+            (id) => idBased(id, HttpMethod.DELETE))
+        };
+    }
+}
+NgEntityServiceLoader.ɵfac = function NgEntityServiceLoader_Factory(t) { return new (t || NgEntityServiceLoader)(); };
+NgEntityServiceLoader.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({ token: NgEntityServiceLoader, factory: NgEntityServiceLoader.ɵfac, providedIn: 'root' });
+/** @nocollapse */ NgEntityServiceLoader.ngInjectableDef = Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"])({ factory: function NgEntityServiceLoader_Factory() { return new NgEntityServiceLoader(); }, token: NgEntityServiceLoader, providedIn: "root" });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NgEntityServiceLoader, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Injectable"],
+        args: [{ providedIn: 'root' }]
+    }], function () { return []; }, null); })();
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+const NG_ENTITY_SERVICE_CONFIG = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["InjectionToken"]('NgEntityServiceGlobalConfig');
+/** @type {?} */
+const defaultConfig = {
+    httpMethods: {
+        GET: HttpMethod.GET,
+        POST: HttpMethod.POST,
+        PATCH: HttpMethod.PATCH,
+        PUT: HttpMethod.PUT,
+        DELETE: HttpMethod.DELETE
+    }
+};
+/**
+ * @param {?} target
+ * @param {...?} sources
+ * @return {?}
+ */
+function mergeDeep(target, ...sources) {
+    if (!sources.length)
+        return target;
+    /** @type {?} */
+    const source = sources.shift();
+    if (Object(_datorama_akita__WEBPACK_IMPORTED_MODULE_0__["isObject"])(target) && Object(_datorama_akita__WEBPACK_IMPORTED_MODULE_0__["isObject"])(source)) {
+        for (const key in source) {
+            if (Object(_datorama_akita__WEBPACK_IMPORTED_MODULE_0__["isObject"])(source[key])) {
+                if (!target[key])
+                    Object.assign(target, { [key]: {} });
+                mergeDeep(target[key], source[key]);
+            }
+            else {
+                Object.assign(target, { [key]: source[key] });
+            }
+        }
+    }
+    return mergeDeep(target, ...sources);
+}
+/**
+ * @param {?=} config
+ * @return {?}
+ */
+function NgEntityServiceConfig(config = {}) {
+    return (/**
+     * @param {?} constructor
+     * @return {?}
+     */
+    function (constructor) {
+        if (config.baseUrl) {
+            constructor['baseUrl'] = config.baseUrl;
+        }
+        if (config.resourceName) {
+            constructor['resourceName'] = config.resourceName;
+        }
+    });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @param {?} idOrConfig
+ * @return {?}
+ */
+function isID(idOrConfig) {
+    return Object(_datorama_akita__WEBPACK_IMPORTED_MODULE_0__["isNumber"])(idOrConfig) || Object(_datorama_akita__WEBPACK_IMPORTED_MODULE_0__["isString"])(idOrConfig);
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @param {?} storeName
+ * @param {?} notifier
+ * @return {?}
+ */
+function successAction(storeName, notifier) {
+    return (/**
+     * @param {?} __0
+     * @return {?}
+     */
+    function ({ payload, method, successMsg }) {
+        notifier.dispatch({
+            type: 'success',
+            storeName,
+            payload,
+            method,
+            successMsg
+        });
+    });
+}
+/**
+ * @param {?} storeName
+ * @param {?} notifier
+ * @return {?}
+ */
+function errorAction(storeName, notifier) {
+    return (/**
+     * @param {?} __0
+     * @return {?}
+     */
+    function ({ payload, method, errorMsg }) {
+        notifier.dispatch({
+            type: 'error',
+            storeName,
+            payload,
+            method,
+            errorMsg
+        });
+    });
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+const mapResponse = (/**
+ * @param {?} config
+ * @return {?}
+ */
+(config) => Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])((/**
+ * @param {?} res
+ * @return {?}
+ */
+res => ((config || {}).mapResponseFn ? config.mapResponseFn(res) : res))));
+/**
+ * @template S
+ */
+class NgEntityService extends _datorama_akita__WEBPACK_IMPORTED_MODULE_0__["EntityService"] {
+    /**
+     * @param {?} store
+     * @param {?=} config
+     */
+    constructor(store, config = {}) {
+        super();
+        this.store = store;
+        this.config = config;
+        this.globalConfig = {};
+        this.http = Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["inject"])(_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"]);
+        this.loader = Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["inject"])(NgEntityServiceLoader);
+        this.notifier = Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["inject"])(NgEntityServiceNotifier);
+        this.globalConfig = Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["inject"])(NG_ENTITY_SERVICE_CONFIG);
+        this.mergedConfig = mergeDeep(defaultConfig, this.globalConfig, config);
+        this.dispatchSuccess = successAction(this.store.storeName, this.notifier);
+        this.dispatchError = errorAction(this.store.storeName, this.notifier);
+    }
+    /**
+     * @return {?}
+     */
+    get api() {
+        return `${this.baseUrl || this.getConfigValue('baseUrl')}/${this.resourceName}`;
+    }
+    /**
+     * @return {?}
+     */
+    get resourceName() {
+        return this.getConfigValue('resourceName') || this.store.storeName;
+    }
+    /**
+     * @param {?} api
+     * @return {?}
+     */
+    setBaseUrl(api) {
+        this.baseUrl = api;
+    }
+    /**
+     * @template T
+     * @param {?=} idOrConfig
+     * @param {?=} config
+     * @return {?}
+     */
+    get(idOrConfig, config) {
+        /** @type {?} */
+        let url;
+        /** @type {?} */
+        const isSingle = isID(idOrConfig);
+        /** @type {?} */
+        const _config = (isSingle ? config : idOrConfig) || {};
+        /** @type {?} */
+        const method = this.getHttpMethod(HttpMethod.GET);
+        if (_config.url) {
+            url = _config.url;
+        }
+        else {
+            url = isSingle ? `${this.api}/${idOrConfig}` : this.api;
+        }
+        this.loader.dispatch({
+            method,
+            loading: true,
+            entityId: isSingle ? idOrConfig : null,
+            storeName: this.store.storeName
+        });
+        return (/** @type {?} */ (this.http[method.toLowerCase()](url, _config).pipe(mapResponse(config), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])((/**
+         * @param {?} data
+         * @return {?}
+         */
+        (data) => {
+            if (isSingle) {
+                this.store.upsert((/** @type {?} */ (idOrConfig)), data);
+            }
+            else {
+                _config.append ? this.store.add(data) : this.store.set(data);
+            }
+            this.dispatchSuccess({
+                method,
+                payload: data,
+                successMsg: _config.successMsg
+            });
+        })), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])((/**
+         * @param {?} error
+         * @return {?}
+         */
+        error => this.handleError(method, error, config.errorMsg))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["finalize"])((/**
+         * @return {?}
+         */
+        () => {
+            this.loader.dispatch({
+                method,
+                loading: false,
+                storeName: this.store.storeName
+            });
+        })))));
+    }
+    /**
+     *
+     * Add a new entity - Creates a POST request
+     *
+     * service.add(entity)
+     * service.add(entity, config)
+     *
+     * @template T
+     * @param {?} entity
+     * @param {?=} config
+     * @return {?}
+     */
+    add(entity, config) {
+        /** @type {?} */
+        const method = this.getHttpMethod(HttpMethod.POST);
+        this.loader.dispatch({
+            method,
+            loading: true,
+            storeName: this.store.storeName
+        });
+        return (/** @type {?} */ (this.http[method.toLowerCase()](this.resolveUrl(config), entity, config).pipe(mapResponse(config), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])((/**
+         * @param {?} entity
+         * @return {?}
+         */
+        (entity) => {
+            this.store.add(entity, config);
+            this.dispatchSuccess({
+                method,
+                payload: entity,
+                successMsg: config && config.successMsg
+            });
+        })), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])((/**
+         * @param {?} error
+         * @return {?}
+         */
+        error => this.handleError(method, error, config && config.errorMsg))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["finalize"])((/**
+         * @return {?}
+         */
+        () => {
+            this.loader.dispatch({
+                method,
+                loading: false,
+                storeName: this.store.storeName
+            });
+        })))));
+    }
+    /**
+     *
+     * Update an entity - Creates a PUT/PATCH request
+     *
+     * service.update(id, entity)
+     * service.update(id, entity, config)
+     *
+     * @template T
+     * @param {?} id
+     * @param {?} entity
+     * @param {?=} config
+     * @return {?}
+     */
+    update(id, entity, config) {
+        /** @type {?} */
+        const method = config && config.method ? config.method : this.getHttpMethod(HttpMethod.PUT);
+        this.loader.dispatch({
+            method,
+            loading: true,
+            entityId: id,
+            storeName: this.store.storeName
+        });
+        return (/** @type {?} */ (this.http[method.toLocaleLowerCase()](this.resolveUrl(config, id), entity, config).pipe(mapResponse(config), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])((/**
+         * @param {?} entity
+         * @return {?}
+         */
+        entity => {
+            this.store.update(id, entity);
+            this.dispatchSuccess({
+                method,
+                payload: entity,
+                successMsg: config && config.successMsg
+            });
+        })), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])((/**
+         * @param {?} error
+         * @return {?}
+         */
+        error => this.handleError(method, error, config && config.errorMsg))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["finalize"])((/**
+         * @return {?}
+         */
+        () => {
+            this.loader.dispatch({
+                method,
+                loading: false,
+                entityId: id,
+                storeName: this.store.storeName
+            });
+        })))));
+    }
+    /**
+     *
+     * Delete an entity - Creates a DELETE request
+     *
+     * service.delete(id)
+     * service.delete(id, config)
+     *
+     * @template T
+     * @param {?} id
+     * @param {?=} config
+     * @return {?}
+     */
+    delete(id, config) {
+        /** @type {?} */
+        const method = this.getHttpMethod(HttpMethod.DELETE);
+        this.loader.dispatch({
+            method,
+            loading: true,
+            entityId: id,
+            storeName: this.store.storeName
+        });
+        return (/** @type {?} */ (this.http[method.toLowerCase()](this.resolveUrl(config, id), config).pipe(mapResponse(config), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])((/**
+         * @param {?} res
+         * @return {?}
+         */
+        res => {
+            this.store.remove(id);
+            this.dispatchSuccess({
+                method,
+                payload: res,
+                successMsg: config && config.successMsg
+            });
+        })), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])((/**
+         * @param {?} error
+         * @return {?}
+         */
+        error => this.handleError(method, error, config && config.errorMsg))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["finalize"])((/**
+         * @return {?}
+         */
+        () => {
+            this.loader.dispatch({
+                method,
+                loading: false,
+                entityId: id,
+                storeName: this.store.storeName
+            });
+        })))));
+    }
+    /**
+     * @private
+     * @param {?} type
+     * @return {?}
+     */
+    getHttpMethod(type) {
+        return this.mergedConfig.httpMethods[type];
+    }
+    /**
+     * @private
+     * @param {?} key
+     * @return {?}
+     */
+    getConfigValue(key) {
+        return this.constructor[key] || this.mergedConfig[key];
+    }
+    /**
+     * @private
+     * @param {?} config
+     * @param {?=} id
+     * @return {?}
+     */
+    resolveUrl(config, id) {
+        /** @type {?} */
+        const customUrl = (config || {}).url;
+        if (Object(_datorama_akita__WEBPACK_IMPORTED_MODULE_0__["isDefined"])(id)) {
+            return customUrl || `${this.api}/${id}`;
+        }
+        return customUrl || this.api;
+    }
+    /**
+     * @private
+     * @param {?} method
+     * @param {?} error
+     * @param {?} errorMsg
+     * @return {?}
+     */
+    handleError(method, error, errorMsg) {
+        this.dispatchError({
+            method,
+            errorMsg,
+            payload: error
+        });
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["throwError"])(error);
+    }
+}
+
+
+
+//# sourceMappingURL=datorama-akita-ng-entity-service.js.map
 
 /***/ }),
 
@@ -39704,6 +46881,260 @@ function dispatch(state) {
 
 /***/ }),
 
+/***/ "hkni":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/@datorama/akita-ng-router-store/node_modules/tslib/tslib.es6.js ***!
+  \**************************************************************************************/
+/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __createBinding, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function() { return __extends; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function() { return __rest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function() { return __decorate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function() { return __param; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__createBinding", function() { return __createBinding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function() { return __spread; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArrays", function() { return __spreadArrays; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function() { return __await; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function() { return __asyncGenerator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function() { return __asyncDelegator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function() { return __asyncValues; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldGet", function() { return __classPrivateFieldGet; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldSet", function() { return __classPrivateFieldSet; });
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    }
+    return __assign.apply(this, arguments);
+}
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+
+function __param(paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+}
+
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+function __generator(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+}
+
+function __createBinding(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}
+
+function __exportStar(m, exports) {
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+}
+
+function __spread() {
+    for (var ar = [], i = 0; i < arguments.length; i++)
+        ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+
+function __spreadArrays() {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+    function fulfill(value) { resume("next", value); }
+    function reject(value) { resume("throw", value); }
+    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+}
+
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+}
+
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+}
+
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result.default = mod;
+    return result;
+}
+
+function __importDefault(mod) {
+    return (mod && mod.__esModule) ? mod : { default: mod };
+}
+
+function __classPrivateFieldGet(receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+}
+
+function __classPrivateFieldSet(receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to set private field on non-instance");
+    }
+    privateMap.set(receiver, value);
+    return value;
+}
+
+
+/***/ }),
+
 /***/ "iKkX":
 /*!*******************************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/scheduler/VirtualTimeScheduler.js ***!
@@ -43206,6 +50637,269 @@ function isDate(value) {
     return value instanceof Date && !isNaN(+value);
 }
 //# sourceMappingURL=isDate.js.map
+
+/***/ }),
+
+/***/ "mrSG":
+/*!*****************************************!*\
+  !*** ./node_modules/tslib/tslib.es6.js ***!
+  \*****************************************/
+/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __createBinding, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function() { return __extends; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function() { return __rest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function() { return __decorate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function() { return __param; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__createBinding", function() { return __createBinding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function() { return __spread; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArrays", function() { return __spreadArrays; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function() { return __await; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function() { return __asyncGenerator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function() { return __asyncDelegator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function() { return __asyncValues; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldGet", function() { return __classPrivateFieldGet; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldSet", function() { return __classPrivateFieldSet; });
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    }
+    return __assign.apply(this, arguments);
+}
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+
+function __param(paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+}
+
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+function __generator(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+}
+
+var __createBinding = Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+});
+
+function __exportStar(m, o) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
+}
+
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+}
+
+function __spread() {
+    for (var ar = [], i = 0; i < arguments.length; i++)
+        ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+
+function __spreadArrays() {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+    function fulfill(value) { resume("next", value); }
+    function reject(value) { resume("throw", value); }
+    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+}
+
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+}
+
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+}
+
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+
+var __setModuleDefault = Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+};
+
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+}
+
+function __importDefault(mod) {
+    return (mod && mod.__esModule) ? mod : { default: mod };
+}
+
+function __classPrivateFieldGet(receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+}
+
+function __classPrivateFieldSet(receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to set private field on non-instance");
+    }
+    privateMap.set(receiver, value);
+    return value;
+}
+
 
 /***/ }),
 
